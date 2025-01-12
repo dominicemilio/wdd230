@@ -20,9 +20,13 @@
      gap: 1rem;
    }
 
-   .card1,
-   .card2 {
-     width: calc(50% - 1rem);
-     /* Two cards side by side with space between */
+   .card1 {
+     flex: 2 1 0%
    }
+
+   .card2 {
+     flex: 1 1 0%
+   }
+
+
  }
