@@ -38,6 +38,7 @@ h1 {
   margin: 0;
   font-size: 3rem;
   font-weight: 700;
+  text-shadow: #2c2b2b 2px 2px 2px;
 }
 
 h2 {
@@ -45,6 +46,7 @@ h2 {
   margin: 40px 0 10px;
   font-weight: 700;
   color: #15616D;
+  text-shadow: #918d88 2px 2px 2px;
 }
 
 h3 {
@@ -109,7 +111,6 @@ nav {
 
 nav a {
   color: #FFECD1;
-  text-shadow: #15616D 2px 2px 2px;
   text-decoration: none;
   padding: 10px;
   font-size: 1.5rem;
