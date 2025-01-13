@@ -81,6 +81,19 @@ hr {
   font-size: 1.5rem;
 }
 
+.card1 li {
+  font-size: 1.75rem;
+  text-shadow: #001524 1px 1px 1px;
+  margin: 20px;
+  list-style-type: none;
+}
+
+nav {
+  background-color: #001524;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 nav ul {
   display: flex;
   flex-direction: column;
@@ -94,19 +107,6 @@ nav ul {
 nav li {
   font-size: 1.75rem;
   margin: 20px;
-}
-
-.card1 li {
-  font-size: 1.75rem;
-  text-shadow: #001524 1px 1px 1px;
-  margin: 20px;
-  list-style-type: none;
-}
-
-nav {
-  background-color: #001524;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
