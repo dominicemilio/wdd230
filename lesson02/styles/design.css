@@ -7,7 +7,8 @@
 body {
   font-family: Roboto, helvetica, sans-serif;
   margin: 1rem;
-  color: #1a1a1a;
+  color: #121212;
+  /* Darker text for better contrast */
   background-color: #ffffff;
 }
 
@@ -19,19 +20,24 @@ footer {
 }
 
 div.banner {
-  border: 1px solid #4a90e2;
+  border: 1px solid #1e63b7;
+  /* Stronger blue for better contrast */
   padding: 1rem;
-  background-color: #d6e9ff;
+  background-color: #cde4ff;
+  /* Lighter blue with stronger contrast */
   font-weight: 700;
   word-break: break-word;
   text-align: center;
-  color: #002a5b;
+  color: #002144;
+  /* Darker text to meet contrast requirements */
 }
 
 h1 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  /* Darker border for contrast */
   margin: 1rem 0;
-  color: #002a5b;
+  color: #002144;
+  /* Darker blue */
 }
 
 main {
@@ -45,27 +51,34 @@ section {
 }
 
 h2 {
-  color: #002a5b;
+  color: #002144;
+  /* Darker text color */
   grid-column: 1/3;
 }
 
 h3 {
   margin-bottom: 0.5rem;
-  color: #003366;
+  color: #003057;
+  /* Darker navy blue */
 }
 
 .callout {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #1a1a1a;
-  background-color: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  /* Darker border */
+  color: #121212;
+  /* Stronger contrast text color */
+  background-color: #f1f1f1;
+  /* Slightly darker background */
   grid-column: 1/3;
   padding: 1rem;
 }
 
 footer {
   margin-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  /* Darker border */
   padding: 0.5rem 0;
   font-size: smaller;
-  color: #333333;
+  color: #222222;
+  /* Darker text */
 }
