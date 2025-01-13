@@ -111,6 +111,8 @@ nav {
 
 nav a {
   color: #FFECD1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.9),
+    0 0 6px rgba(255, 255, 255, 0.7);
   text-decoration: none;
   padding: 10px;
   font-size: 1.5rem;
