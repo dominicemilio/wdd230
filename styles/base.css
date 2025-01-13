@@ -140,3 +140,7 @@ footer img {
   vertical-align: middle;
   margin-left: 5px;
 }
+
+.line-break {
+  display: block;
+}
