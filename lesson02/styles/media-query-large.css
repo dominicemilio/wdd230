@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) {
 
-  /* Changed breakpoint to 768px (common tablet size) */
   header {
     background-color: #000;
     color: #fff;
@@ -8,7 +7,6 @@
 
   main {
     grid-template-columns: 1fr 1fr;
-    /* Two columns on larger screens */
     grid-gap: 1rem;
   }
 }
