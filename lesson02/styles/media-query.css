@@ -1,11 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  /* Remove default body margin */
 }
 
 header,
 main,
 footer {
-  max-width: 640px;
+  max-width: 960px;
+  /* Increased max-width for better responsiveness */
   margin: 1rem auto;
   border: 1px solid #bbb;
   padding: 1rem;
@@ -15,23 +18,17 @@ footer {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  /* Single column on small screens */
   grid-gap: 1rem;
 }
 
 section {
   padding: 1rem;
   background-color: #fff;
+  border: 1px solid #ddd;
+  /* Added border for better separation */
 }
 
-@media screen and (min-width: 500px) {
-
-  header {
-    background-color: #000;
-    color: #fff;
-  }
-
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-
+footer {
+  text-align: center;
 }
