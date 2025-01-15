@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Principles</title>
+  <meta name="author" content="Dominic Emilio Clemence">
+  <meta name="description" content="WDD 230 - Web Frontend Development - Design Principle Examples">
+
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>Design Principles Document</h1>
+    <h2>Dominic Emilio Clemence</h2>
+  </header>
+
+  <main>
+    <section class="first-card">
+      <h3>Visual Hierarchy</h3>
+      <a href="https://www.nytimes.com/">The New York Times</a>
+      <img src="images/the-nyt.png" alt="The NYT Screenshot">
+      <p class="paragraph"> The New York Times homepage has a defined visual hierarchy that draws the readers to the
+        printed information.
+        This emulates the printed version of the newspaper, but in a more dynamic way. It includes:
+      <ul>
+        <li>
+          <strong> Top Navigation/Masthead</strong> - The user can choose the top content they want to view, (e.g.,
+          "News," "Sports.")
+        </li>
+        <li>
+          <strong> Hero Section</strong> - This displays a large image or video along with a headline to a top story.
+        </li>
+        <li>
+          <strong>Other Headlines</strong> - Diverse stories which can sometimes be accompanied by images.
+        </li>
+        <li>
+          <strong>Article Summaries</strong> - Brief summaries that accompany the headlines.
+        </li>
+        <li>
+          <strong>Section Headings</strong> - Identifiable headings, (e.g., "U.S.," "World," "Business") in distinct
+          fonts or colors.
+        </li>
+        <li>
+          <strong>Color and Contrast</strong> - With a conservative color palette, mainly black, gray, and white.
+        </li>
+        <li>
+          <strong>Whitespace</strong> - Functioning use of both whitespace and negative whitespace to separate different
+          elements.
+        </li>
+        <li>
+          <strong>Font Size and Weight</strong> - Different sizes and weights of fonts are used to create hierarchy.
+        </li>
+      </ul>
+      In summary, the NYT homepage uses all these elements to give a clear visual hierarchy.
+      </p>
+    </section>
+    <section class="second-card">
+      <h3>Fitt's Law</h3>
+      <a href="https://www.netflix.com/">Netflix</a>
+      <img src="images/netflix.jpg" alt="Netflix Screenshot">
+      <p class="paragraph">
+        Fitts's Law, as it relates to computers, distinctly says people will move faster and more easily through a
+        webpage when the target is bigger and closer. An example would be a button strategically placed on a webpage.
+        Netflix's homepage is an excellent example of this principle in several ways. Netflix employs:
+      <ul>
+        <li>
+          <strong>Large, Clickable Thumbnails:</strong> The primary way users interact with Netflix is by clicking on
+          the movie or show
+          thumbnails. These thumbnails are relatively big, which reduces the time it takes to make a sellection.
+        </li>
+        <li>
+          <strong>Prominent Play Buttons:</strong> When a user hovers over a thumbnail, the play button appears. This
+          button is large and
+          prominently located on the thumbnail itself.
+        </li>
+        <li>
+          <strong>Row-Based Layout:</strong> The movies are organized by horizontal rows of thumbnails. This
+          layout minimizes distance.
+          In the end, it makes it easier to choose content.
+        </li>
+        <li>
+          <strong>"Next" and "Previous" Buttons:</strong> To navigate through rows of content, Netflix provides
+          "Next" and "Previous"
+          buttons. These are large and placed at the edges of the screen.
+        </li>
+        <li>
+          <strong> Focus on Hover:</strong> When you hover over a movie/show, more information and options (like "Add to
+          My List") appear.
+        </li>
+      </ul>
+      By using Fitts's Law, Netflix improves the user interface for quick and effortless navigation. Users can easily
+      search through an enormous library of content and quickly select titles.
+      </p>
+    </section>
+    <section class="third-card">
+      <h3>Whitespace and Clean Design</h3>
+      <a href="https://scopecopenhagen.com/">Scope Copenhagen</a>
+      <img src="images/scope.jpg" alt="Scope Copenhagen Screenshot">
+      <p class="paragraph">
+        Scope Copenhagen's website is an excellent example utilizing whitespace and clean design to give the user an
+        elegant create an elegant adventure. The website itself demonstrates Scandinavian aesthetics with “Minimalism."
+        Listed below are specific ways they achieve their goal:
+      <ul>
+        <li>
+          <strong>Ample Use of Whitespace</strong>
+          Every section, including "Projects," "About Scope," and "Contact," is surrounded by generous negative space.
+        </li>
+        <li>
+          <strong>Neutral Color Palette:</strong>
+          A consistent use of subtle tones and neutral colors adds to a calming, sophisticated look that avoids visual
+          clutter.
+
+        </li>
+        <li>
+          <strong>Clear Visual Hierarchy:</strong>
+          Typography choices and spacing are carefully designed to lead the user comfortably through the site.
+
+        </li>
+        <li>
+          <strong>Minimalist Navigation Menu:</strong>
+          The navigation menu is clean and simple, prioritizing usability and efficiency.
+
+        </li>
+        <li>
+          <strong>High-Quality Imagery:</strong>
+          Large images are integrated with whitespace to provide visual impact without overwhelming the user.
+        </li>
+      </ul>
+      Scope Copenhagen's use of whitespace and clean design transforms their website into more than just a digital
+      space—it becomes a reflection of their culture.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> <span class="line-break">Dominic Emilio Clemence</span>
+      <span class="line-break">Colombia</span>
+      <img src="../images/colombian-flag2.png" alt="Flag of Colombia" width="50" height="50">
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="../scripts/getdates.js"></script>
+</body>
+
+</html>

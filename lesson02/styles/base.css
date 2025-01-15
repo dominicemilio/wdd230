@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -55,6 +55,35 @@ a {
   margin-top: 0;
 }
 
+footer {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  color: #FFECD1;
+  text-shadow: #001524 2px 2px 2px;
+  background-color: #0a3d62;
+  border: 2px solid #545a5c;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+footer .line-break {
+  display: inline;
+}
+
+footer img {
+  margin-left: 0;
+}
+
 @media only screen and (max-width: 968px) {
   main {
     grid-template-columns: 306px 306px;
@@ -65,4 +94,15 @@ a {
     grid-column-end: 3;
   }
 
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    grid-template-columns: 306px;
+  }
+
+  .third-card {
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
 }

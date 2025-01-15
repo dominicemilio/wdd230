@@ -1,0 +1,11 @@
+@media only screen and (max-width: 968px) {
+  main {
+    grid-template-columns: 306px 306px;
+  }
+
+  .third-card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}
