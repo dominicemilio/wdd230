@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #0a3d62;
+  background-color: #650479;
   color: #fff;
   text-align: center;
   padding: 1px;
@@ -60,7 +60,7 @@ footer {
   font-family: "Maryweather", sans-serif;
   color: #FFECD1;
   text-shadow: #001524 2px 2px 2px;
-  background-color: #0a3d62;
+  background-color: #650479;
   border: 2px solid #545a5c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 10px;
