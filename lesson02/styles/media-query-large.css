@@ -1,68 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@media screen and (min-width: 641px) {
+  header {
+    background-color: black;
+    color: white;
+  }
 
-body {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-header {
-  background-color: #0a3d62;
-  color: #fff;
-  text-align: center;
-  padding: 1px;
-  margin-bottom: 15px;
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 306px);
-  justify-content: space-around;
-  gap: 20px;
-}
-
-section {
-  background-color: #ced6e0;
-  border-radius: 10px 10px 0 0;
-}
-
-section img {
-  width: 300px;
-  padding-top: 10px;
-  display: block;
-  margin: 0 auto;
-}
-
-section h3 {
-  background-color: #3c6382;
-  color: #fff;
-  padding: 5px;
-  padding-left: 10px;
-  margin-top: 0;
-  border-radius: 10px 10px 0 0;
-}
-
-a {
-  width: 100%;
-  display: block;
-}
-
-p,
-a {
-  padding-left: 10px;
-}
-
-.paragraph {
-  padding: 10px;
-  margin-top: 0;
-}
-
-@media only screen and (max-width: 968px) {
   main {
-    grid-template-columns: 306px 306px;
+    grid-template-columns: 1fr 1fr;
   }
-
-  .third-card {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
 }
