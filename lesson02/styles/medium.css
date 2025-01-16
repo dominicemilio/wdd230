@@ -3,7 +3,7 @@
     grid-template-columns: 306px 306px;
   }
 
-  .third-card {
+  .article3 {
     grid-column-start: 1;
     grid-column-end: 3;
   }
