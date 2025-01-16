@@ -1,0 +1,16 @@
+@media (min-width:968px) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 306px);
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .third-card {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+
+  }
+}
