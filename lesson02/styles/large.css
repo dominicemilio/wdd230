@@ -1,73 +1,8 @@
- /*Default stylesheet */
- @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Source+Sans+Pro:wght@300&display=swap');
- /* font-family: 'Hind Siliguri', sans-serif;    Bold
-   font-family: 'Source Sans Pro', sans-serif;  Regular*/
+@media (max-width:800px) {
 
- body {
-   width: 100%;
-   max-width: 1500px;
-   margin: 0px auto;
-   font-family: 'Source Sans Pro', sans-serif;
- }
+  main {
+    display: block;
 
- header,
- footer {
-   background-color: rgb(11, 32, 48);
-   font-family: 'Hind Siliguri', sans-serif;
-   text-align: center;
-   color: white;
-   padding: 10px 10px;
-   margin: 0px 0px;
- }
+  }
 
- main {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   justify-items: center;
- }
-
- h1 h2 h3 h4 {
-   font-family: 'Hind Siliguri', sans-serif;
- }
-
- h1,
- h2,
- h3 {
-   margin: 0px 0px;
- }
-
- h3 {
-   color: white;
-   background-color: rgb(58, 73, 88);
-   padding: 5px 5px;
- }
-
- p {
-   margin: 10px 10px;
- }
-
- .first-card,
- .second-card,
- .third-card {
-   background-color: rgb(238, 238, 238);
-   border: 1px solid black;
-   border-radius: 10px;
-   margin: 10px 15px;
-   display: grid;
-   grid-template-rows: min-content auto;
-   overflow: hidden;
-
- }
-
- .first-card,
- .second-card,
- .third-card img {
-   width: 100%;
-   margin-top: 20px;
- }
-
- .first-card,
- .second-card,
- .third-card div {
-   margin: 5px;
- }
+}
