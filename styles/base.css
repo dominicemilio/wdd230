@@ -118,6 +118,14 @@ nav a {
   font-size: 1.5rem;
 }
 
+#map {
+  width: 98%;
+  margin-left: 12px;
+  border: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
 footer {
   font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
