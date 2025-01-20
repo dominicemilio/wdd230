@@ -42,19 +42,44 @@
     margin: 10px;
   }
 
-  footer p {
+  .navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 10px;
   }
 
-  footer .line-break {
-    display: inline;
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1 100%;
   }
 
-  footer img {
-    margin-left: 0;
+  .navigation a {
+    text-align: center;
   }
+
+  #menu {
+    display: none;
+  }
+}
+
+#map {
+  width: 97%;
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+footer .line-break {
+  display: inline;
+}
+
+footer img {
+  margin-left: 0;
+}
 }
