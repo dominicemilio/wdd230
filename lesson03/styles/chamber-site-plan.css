@@ -1,0 +1,134 @@
+ /* General Reset */
+ body,
+ h1,
+ h2,
+ p,
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #FFCD00;
+   color: #333;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+ }
+
+ header {
+   background-color: #0033A0;
+   color: #FFFFFF;
+   padding: 1rem;
+   text-align: center;
+ }
+
+ h1 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 2rem;
+ }
+
+ main {
+   padding: 1rem;
+   max-width: 800px;
+   margin: 0 auto;
+ }
+
+ section {
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background-color: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   border-radius: 8px;
+ }
+
+ h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.5rem;
+   color: #0033A0;
+   margin-bottom: 0.5rem;
+ }
+
+ p,
+ li {
+   font-size: 1rem;
+   color: #333;
+ }
+
+ ul {
+   list-style-type: disc;
+   padding-left: 1.5rem;
+ }
+
+ li {
+   margin-bottom: 0.5rem;
+ }
+
+ .color-swatch {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   border: 1px solid #000;
+ }
+
+ .heading-font {
+   font-family: "Poppins", sans-serif;
+ }
+
+ .body-font {
+   font-family: "Roboto", sans-serif;
+ }
+
+ .accent-font {
+   font-family: "Playfair Display", serif;
+ }
+
+ footer {
+   background-color: #CE1126;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 1rem;
+   margin-top: 2rem;
+ }
+
+ /* Buttons and Call-to-Action Styling */
+ button,
+ a {
+   background-color: #FFCD00;
+   color: #0033A0;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1rem;
+   cursor: pointer;
+ }
+
+ button:hover,
+ a:hover {
+   background-color: #FFD700;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   body {
+     padding: 0.5rem;
+   }
+
+   main {
+     padding: 0.5rem;
+   }
+
+   h1 {
+     font-size: 1.5rem;
+   }
+
+   h2 {
+     font-size: 1.2rem;
+   }
+ }
