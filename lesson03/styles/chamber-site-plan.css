@@ -89,10 +89,14 @@
 
  footer {
    background-color: #CE1126;
-   color: #FFFFFF;
+   color: #ffffff;
    text-align: center;
    padding: 1rem;
    margin-top: 2rem;
+ }
+
+ footer p {
+   color: #ffffff;
  }
 
  /* Buttons and Call-to-Action Styling */
