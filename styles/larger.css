@@ -62,9 +62,14 @@
 }
 
 #map {
-  width: 97%;
-  margin-left: 0;
-  padding-left: 15px;
+  width: 93%;
+  /* Matches the total width of .card1 and .card2 */
+  margin: 10px auto;
+  /* Align map with other sections */
+  padding: 0;
+  border: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
 }
 
 footer p {

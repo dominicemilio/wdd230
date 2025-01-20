@@ -174,8 +174,9 @@ navigation a:active {
 
 #map {
   width: 94%;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  /* Matches .flex-container */
+  margin: 0 auto;
+  /* Center align the map */
   border: 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
