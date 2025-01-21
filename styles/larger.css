@@ -52,6 +52,60 @@
     flex: 1 1 100%;
   }
 
+  /* General Styles for Larger Screens */
+@media (min-width: 768px) {
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card1,
+  .card2 {
+    width: 45%;
+    margin: 10px auto 1rem;
+    padding: 10px;
+    border: 2px solid #757e80;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #FFECD1;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .card1 {
+    width: 62%;
+  }
+
+  .card2 {
+    width: 31%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li,
+  .card1 li {
+    font-size: 1.25rem;
+    margin: 10px;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
   .navigation a {
     text-align: center;
   }
@@ -59,31 +113,29 @@
   #menu {
     display: none;
   }
-}
 
-#map {
-  width: 93%;
-  /* Matches the total width of .card1 and .card2 */
-  margin: 10px auto;
-  /* Align map with other sections */
-  padding: 0;
-  border: 0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
+  #map {
+    width: 93%;
+    margin: 10px auto;
+    padding: 0;
+    border: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
 
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
+  footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
 
-footer .line-break {
-  display: inline;
-}
+  footer .line-break {
+    display: inline;
+  }
 
-footer img {
-  margin-left: 0;
+  footer img {
+    margin-left: 0;
+  }
 }
