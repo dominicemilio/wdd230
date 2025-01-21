@@ -155,10 +155,10 @@ nav a {
 .card1,
 .card2 {
   width: 94%;
-  border: 2px solid #757e80;
+  border: 2px solid #6f7779;
   margin: 0 auto 1rem;
   border-radius: 4px;
-  box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #FFECD1;
 }
 
