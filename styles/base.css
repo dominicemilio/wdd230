@@ -10,7 +10,9 @@ body {
 }
 
 /* Heading Styles */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
@@ -139,7 +141,8 @@ nav a {
   font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover,
+.navigation a:active {
   color: white;
   background-color: black;
 }
@@ -149,12 +152,13 @@ nav a {
 }
 
 /* Card Styles */
-.card1, .card2 {
+.card1,
+.card2 {
   width: 94%;
   border: 2px solid #757e80;
   margin: 0 auto 1rem;
   border-radius: 4px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
   background-color: #FFECD1;
 }
 
