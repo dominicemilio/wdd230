@@ -12,7 +12,7 @@
 
  body {
    font-family: 'Roboto', sans-serif;
-   background-color: #FFCD00;
+   background-color: #FFE28A;
    color: #333;
    line-height: 1.6;
    margin: 0;
@@ -20,7 +20,7 @@
  }
 
  header {
-   background-color: #0033A0;
+   background-color: #335FAB;
    color: #FFFFFF;
    padding: 1rem;
    text-align: center;
@@ -88,7 +88,7 @@
  }
 
  footer {
-   background-color: #CE1126;
+   background-color: #E26B76;
    color: #ffffff;
    text-align: center;
    padding: 1rem;
