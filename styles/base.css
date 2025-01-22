@@ -174,6 +174,18 @@ nav a {
   list-style-type: none;
 }
 
+#map-container {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #6f7779;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #FFECD1;
+}
+
 #map {
   width: 94%;
   margin: 0 auto;

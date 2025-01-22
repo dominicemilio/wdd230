@@ -23,6 +23,7 @@
     color: #FFFFFF;
     padding: 1rem;
     text-align: center;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
   }
 
   h1 {
@@ -49,6 +50,7 @@
     font-size: 1.5rem;
     color: #0033A0;
     margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   p,
@@ -65,6 +67,32 @@
   li {
     margin-bottom: 0.5rem;
   }
+
+  #site-name {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #site-purpose {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #scenarios {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #color-schema {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #typography {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #wireframe {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+
 
   .color-swatch {
     display: inline-block;
@@ -90,6 +118,7 @@
     background-color: #E26B76;
     color: #ffffff;
     text-align: center;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     margin-top: 2rem;
   }
