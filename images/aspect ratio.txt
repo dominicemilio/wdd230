@@ -1,0 +1,14 @@
+guatape			width: 820px	height: 312px	ratio: 92:35	size: 96kb	type: jpg	
+
+dominic-bowtie		width: 490px	height: 653px	ratio: 3:4	size: 36kb	type: webp
+
+colombian-flag2		width: 500px	height: 500px	ratio: 1:1	size: 14.6kb	type: webp
+
+
+
+netflix			width: 738px	height: 1446px	ratio: 25:49	size: 96kb	type: webp
+
+scope			width: 738px	height: 1428px	ratio: 15:29	size: 43kb	type: webp
+
+the-nyt			width: 424px	height: 818px	ratio: 14:27	size: 60kb	type: webp
+
