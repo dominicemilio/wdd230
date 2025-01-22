@@ -52,6 +52,11 @@ hr {
   display: block;
 }
 
+#header-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #6f7779;
+}
+
 header {
   background-color: #15616D;
   display: flex;
@@ -150,7 +155,7 @@ nav a {
 .card1,
 .card2 {
   width: 94%;
-  border: 2px solid #6f7779;
+  border: 1px solid #6f7779;
   margin: 0 auto 1rem;
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -172,7 +177,7 @@ nav a {
 #map {
   width: 94%;
   margin: 0 auto;
-  border: 0;
+  border: 1px solid #6f7779;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
@@ -183,7 +188,7 @@ footer {
   color: #FFECD1;
   text-shadow: #001524 2px 2px 2px;
   background-color: #15616D;
-  border: 2px solid #545a5c;
+  border: 1px solid #6f7779;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 10px;
   text-align: center;
