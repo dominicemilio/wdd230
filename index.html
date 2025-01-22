@@ -26,7 +26,7 @@
 
 <body>
   <header>
-    <img src="images/dominic-bowtie.webp" alt="Profile picture of a man in bowtie" width="150" height="200">
+    <img src="images/dominic-bowtie.webp" alt="Profile picture of a man in bowtie">
     <h1>Dominic E. Clemence</h1>
   </header>
   <a id="menu" href="#" aria-label="Open navigation menu"></a>
@@ -100,16 +100,18 @@
       </section>
     </div>
   </main>
-  <iframe id="map"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16649.973780573146!2d-75.16843579888564!3d6.2311373501114895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e441d2972edf1bb%3A0xc8e9c49c096f7adc!2sGuatap%C3%A9%2C%20Antioquia!5e1!3m2!1sen!2sco!4v1737293029491!5m2!1sen!2sco"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+  <div id="map-container">
+    <iframe title="" id="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16649.973780573146!2d-75.16843579888564!3d6.2311373501114895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e441d2972edf1bb%3A0xc8e9c49c096f7adc!2sGuatap%C3%A9%2C%20Antioquia!5e1!3m2!1sen!2sco!4v1737293029491!5m2!1sen!2sco"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
   <footer>
     <p>
       &copy; <span id="year"></span> <span class="line-break">Dominic Emilio Clemence</span>
       <span class="line-break">Colombia</span>
-      <img src="images/colombian-flag2.webp" alt="Flag of Colombia" width="50" height="50">
+      <img src="images/colombian-flag2.webp" alt="Flag of Colombia">
     </p>
     <p id="lastModified"></p>
   </footer>
