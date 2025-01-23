@@ -141,6 +141,36 @@
     font-family: "Playfair Display", serif;
   }
 
+  #wireframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* Space between the images */
+  }
+
+  #large-wireframe {
+    width: 100%;
+    /* Adjust width to fit parent */
+    max-width: 500px;
+    /* Limit the maximum size */
+    aspect-ratio: 9 / 10;
+    /* Maintain 9:10 aspect ratio */
+    object-fit: contain;
+    /* Ensure the image fits within its container */
+  }
+
+  #small-wireframe {
+    width: 100%;
+    /* Adjust width to fit parent */
+    max-width: 400px;
+    /* Limit the maximum size */
+    aspect-ratio: 11 / 47;
+    /* Maintain 11:47 aspect ratio */
+    object-fit: contain;
+    /* Ensure the image fits within its container */
+  }
+
   footer {
     background-color: #335FAB;
     color: #ffffff;
