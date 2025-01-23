@@ -160,6 +160,12 @@
     /* Ensure the image fits within its container */
   }
 
+  hr {
+    width: 70%;
+    border: 1px solid #aca6a6;
+
+  }
+
   #small-wireframe {
     width: 100%;
     /* Adjust width to fit parent */
