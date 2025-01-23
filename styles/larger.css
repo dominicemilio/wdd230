@@ -56,6 +56,13 @@
     text-align: center;
   }
 
+  .navigation a:hover,
+  .navigation a:active {
+    color: white;
+    background-color: #15616D;
+    border-radius: 50px;
+  }
+
   #menu {
     display: none;
   }
