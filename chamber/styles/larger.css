@@ -1,0 +1,12 @@
+ @media (min-width: 1200px) {
+   #nav-menu {
+     gap: 30px;
+
+   }
+
+   #events .card,
+   #weather .card,
+   #spotlights .card {
+     width: calc(33.33% - 20px);
+   }
+ }
