@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guatape Chamber of Commerce</title>
+  <title>Guatape Chamber of Commerce | WDD230 Web Frontend Development</title>
   <meta name="author" content="Dominic Emilio Clemence">
   <meta name="description"
-    content="This is the Guatape Chamber of Commerce website created for learning purposes, it's an assignment by Dominic Emilio Clemence for the WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    content="This is the Guatape Chamber of Commerce website created for learning purposes, an assignment by Dominic Emilio Clemence for the WDD 230 - Web Frontend Development course at BYU-Idaho.">
   <meta property="og:title" content="Guatape Chamber of Commerce | WDD230">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://dominicemilio.github.io/wdd230/chamber/images/guatape.jpg">
   <meta property="og:url" content="https://dominicemilio.github.io/wdd230/chamber/index.html">
-  <title>Guatape Chamber of Commerce | WDD230 Web Frontend Development</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -24,10 +23,10 @@
   <header>
     <div id="header-container">
       <div class="logo-container">
-        <img class="logo" src="images/logo.svg" alt="Guatape Chamber of Commerce Logo">
+        <img class="logo" src="images/logo.svg" alt="Logo of the Guatape Chamber of Commerce">
       </div>
       <nav>
-        <button id="menu-toggle">☰</button>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
         <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
@@ -41,8 +40,8 @@
   <main>
     <section id="hero">
       <h1>Welcome to the Guatape Chamber of Commerce</h1>
-      <img src="images/guatape-hero2.webp" alt="Picture of Guatape, Colombia">
-      <p>Guatape! The Most Beautiful Place On Earth!!</p>
+      <img src="images/guatape-hero2.webp" alt="Scenic view of Guatape, Colombia">
+      <p>Guatape! The Most Beautiful Place on Earth!</p>
     </section>
 
     <section id="call-to-action">
@@ -50,23 +49,19 @@
     </section>
 
     <section id="events">
-      <h2>Upcoming Events - Placeholder</h2>
+      <h2>Upcoming Events</h2>
       <div class="card">
         <h3>Community Meeting</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In qui eligendi dicta veniam quam perspiciatis
-          eaque, mollitia eius deserunt voluptas iusto. Beatae itaque dolore iure repellendus tempora impedit.
-          Impedit, nobis!</p>
+        <p>Join us for our monthly community meeting to discuss important topics and connect with local businesses.</p>
       </div>
       <div class="card">
         <h3>Art Festival</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque dignissimos corporis, laudantium
-          voluptates accusantium, est quia ex provident itaque totam asperiores nisi quasi cupiditate commodi
-          consectetur? Esse, eligendi aspernatur?</p>
+        <p>Celebrate local talent at the Guatape Art Festival! Enjoy art exhibits, live music, and more.</p>
       </div>
     </section>
 
     <section id="weather">
-      <h2>Guatape Weather - Placeholder </h2>
+      <h2>Guatape Weather</h2>
       <div class="card">
         <h3>Today's Weather</h3>
         <p>Sunny, 25°C (77°F)</p>
@@ -75,30 +70,27 @@
     </section>
 
     <section id="spotlights">
-      <h2>Featured Businesses - Placeholder</h2>
+      <h2>Featured Businesses</h2>
       <div class="card">
         <h3>Guatape Cafe</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe quos mollitia modi itaque officiis
-          corporis fuga odit perferendis, deleniti adipisci, sapiente dolorum qui, cumque aspernatur commodi non animi
-          ab?</p>
+        <p>Enjoy locally roasted coffee and freshly baked goods at Guatape Cafe, a favorite spot for locals and visitors
+          alike.</p>
       </div>
       <div class="card">
         <h3>Guatape Tours</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, adipisci non ducimus laboriosam officiis
-          ad, impedit nisi quam, neque veniam architecto distinctio exercitationem ipsa. Doloremque impedit ab dicta
-          eaque id.</p>
+        <p>Explore the beauty of Guatape with guided tours that showcase the region's rich culture and stunning scenery.
+        </p>
       </div>
       <div class="card">
         <h3>Guatape Boat Rentals</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis cumque vero, obcaecati amet optio
-          provident earum consequuntur voluptatum aliquid, qui quasi modi aspernatur soluta nulla quis autem nesciunt
-          inventore blanditiis?</p>
+        <p>Rent a boat and experience the calm, picturesque waters of Guatape. Perfect for family outings or romantic
+          getaways.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Contact us at info@chamberofcommerce.com</p>
+    <p>Contact us at <a href="mailto:info@chamberofcommerce.com">info@chamberofcommerce.com</a></p>
     <p>Developed by Dominic Emilio Clemence for WDD 230</p>
     <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
