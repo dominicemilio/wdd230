@@ -16,11 +16,17 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  .logo {
+    border-radius: 25px;
+    border: 2px solid rgb(248, 234, 234);
+    display: inline-block;
+  }
+
   nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
