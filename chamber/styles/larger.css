@@ -4,6 +4,17 @@
 
    }
 
+   #hero img {
+     width: 100%;
+     /* Full width */
+     height: auto;
+     /* Maintain aspect ratio */
+     max-height: 500px;
+     /* Optional max height */
+     object-fit: cover;
+     /* Crop to fit the container */
+   }
+
    #events .card,
    #weather .card,
    #spotlights .card {

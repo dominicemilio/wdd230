@@ -123,6 +123,14 @@
     }
   }
 
+  #hero img {
+    width: 100%;
+    /* Still full width */
+    max-height: 300px;
+    /* Reduce the height for smaller screens */
+    object-fit: cover;
+    /* Maintain proper cropping */
+  }
 
   .card {
     border: 1px solid #CE1126;
