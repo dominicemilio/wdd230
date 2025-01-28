@@ -6,22 +6,14 @@ function updateLastModified() {
   }
 }
 
-// Toggle the mobile navigation menu
-function setupMenuToggle() {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      // Menu visibility switched on click
-      if (navMenu.style.display === 'block') {
-        navMenu.style.display = 'none';
-      } else {
-        navMenu.style.display = 'block';
-      }
-    });
-  }
-}
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
 
 // Initialize all scripts when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
