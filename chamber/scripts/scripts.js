@@ -16,5 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   updateLastModified();
-  setupMenuToggle();
 });
