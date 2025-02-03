@@ -1,0 +1,28 @@
+<head>
+  <style>
+    .gridlayout {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-gap: .25rem;
+    }
+
+    .item {
+      width: 100px;
+      height: 10px;
+      grid-column: 2/3;
+    }
+
+    .imgitem {
+      grid-row: 1/4;
+    }
+  </style>
+</head>
+<div class="gridlayout">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="imgitem">
+    <img src="https://placehold.co/190x300">
+  </div>
+  <div class="item">4</div>
+</div>
