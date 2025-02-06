@@ -28,4 +28,25 @@
    section {
      text-align: center;
    }
+
+   footer {
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+     text-align: left;
+   }
+
+   .footer-left,
+   .footer-center,
+   .footer-right {
+     margin: 0 20px;
+   }
+
+   .footer-center {
+     text-align: center;
+   }
+
+   .footer-right {
+     text-align: right;
+   }
  }

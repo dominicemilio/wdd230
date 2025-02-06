@@ -20,4 +20,31 @@
    #spotlights .card {
      width: calc(33.33% - 20px);
    }
+
+   footer {
+     padding: 20px 50px;
+   }
+
+   .footer-logo {
+     width: 100px;
+   }
+
+   .social-icon {
+     width: 40px;
+     height: 40px;
+   }
+
+   .location-link {
+     color: #fff;
+     text-decoration: none;
+     display: flex;
+     align-items: flex-start;
+     justify-content: flex-start;
+   }
+
+
+   .map-pin-icon {
+     width: 25px;
+     height: 25px;
+   }
  }
