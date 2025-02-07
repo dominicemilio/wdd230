@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
+/* General Reset and Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -29,6 +30,7 @@ blockquote {
   background-color: #F4F4F4;
 }
 
+/* Header Styles */
 header {
   background-color: #0033A0;
   color: #fff;
@@ -57,6 +59,7 @@ header {
   border: 2px solid #070707;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
   align-items: center;
@@ -85,7 +88,7 @@ nav {
 
 #nav-menu a {
   text-decoration: none;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
@@ -96,54 +99,14 @@ nav {
   color: #FFCD00;
 }
 
-@media screen and (max-width: 768px) {
-  #menu-toggle {
-    display: block;
-  }
-
-  #nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #0033A0;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-
-  #nav-menu.active {
-    display: flex;
-  }
-
-  #nav-menu li {
-    display: block;
-    text-align: center;
-  }
-
-  #nav-menu a {
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-    background-color: #FFCD00;
-    color: #0033A0;
-  }
-
-  #nav-menu a:hover {
-    background-color: #CE1126;
-    color: #fff;
-  }
-}
-
+/* Hero Section */
 #hero img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
 }
 
+/* Card Styles */
 .card {
   border: 1px solid #CE1126;
   border-radius: 10px;
@@ -163,16 +126,20 @@ nav {
   margin: 0 0 10px;
   font-size: 1.5rem;
   color: #0033A0;
-  font-family: 'Poppins', sans-serif;
 }
 
 .card p {
   margin: 0 0 5px;
   line-height: 1.6;
   color: #333;
-  font-family: 'Roboto', sans-serif;
 }
 
+section>.card {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Call to Action Button */
 .cta-button {
   display: inline-block;
   background-color: #FFCD00;
@@ -181,7 +148,6 @@ nav {
   text-decoration: none;
   font-weight: 600;
   border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .cta-button:hover {
@@ -189,16 +155,11 @@ nav {
   color: #fff;
 }
 
-section>.card {
-  max-width: 600px;
-  margin: 10px auto;
-}
-
+/* Footer Styles */
 footer {
   background-color: #0033A0;
   color: #fff;
   padding: 20px;
-  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,23 +179,13 @@ footer {
   border-radius: 25px;
 }
 
-.email {
-  color: #fff;
-  text-decoration: none;
-}
-
-.email:hover {
-  text-decoration: underline;
-}
-
+.email,
 .location-link {
   color: #fff;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+.email:hover,
 .location-link:hover {
   text-decoration: underline;
 }
@@ -242,7 +193,6 @@ footer {
 .map-pin-icon {
   margin-right: 5px;
   display: inline-block;
-  color: #fff;
 }
 
 .social-icon {
@@ -251,8 +201,7 @@ footer {
   margin: 0 10px;
 }
 
-
-
+/* Dark Mode Styles */
 .dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -304,4 +253,47 @@ input:checked+.slider {
 
 input:checked+.slider:before {
   transform: translateX(14px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0033A0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  #nav-menu li {
+    display: block;
+    text-align: center;
+  }
+
+  #nav-menu a {
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    background-color: #FFCD00;
+    color: #0033A0;
+  }
+
+  #nav-menu a:hover {
+    background-color: #CE1126;
+    color: #fff;
+  }
 }
