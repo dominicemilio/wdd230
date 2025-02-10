@@ -151,6 +151,39 @@ nav a {
   display: block;
 }
 
+/* Hero Image Styling */
+.hero {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #6f7779;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Temple Name Styling */
+.temple-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(21, 97, 109, 0.8);
+  /* Matching the header color with opacity */
+  color: #FFECD1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
 .card1,
 .card2 {
   width: 94%;
