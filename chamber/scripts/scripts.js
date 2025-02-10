@@ -1,34 +1,23 @@
-function updateLastModified() {
-  const lastModifiedElement = document.getElementById('last-modified');
-  if (lastModifiedElement) {
-    lastModifiedElement.textContent = document.lastModified;
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-  updateLastModified();
-});
+  const temperature = parseFloat(document.getElementById('temp').textContent);
+  const windSpeed = parseFloat(document.getElementById('windSpeed').textContent);
+  const windChillDisplay = document.getElementById('windChill');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-  const isDarkMode = localStorage.getItem("darkMode") === "true";
-
-  if (isDarkMode) {
-    document.body.classList.add("dark-mode");
-    darkModeToggle.checked = true;
+  function calculateWindChill(temp, speed) {
+    if (temp <= 50 && speed > 3.0) {
+      let windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16));
+      return windChill.toFixed(1) + " °F";
+    }
+    else if (temp > 50 && speed > 3.0) {
+      return "N/A (Temperature too high)";
+    }
+    else if (temp <= 50 && speed <= 3.0) {
+      return "N/A (Wind speed too low)";
+    }
+    else {
+      return "N/A (Conditions not met)";
+    }
   }
 
-  darkModeToggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
-  });
+  windChillDisplay.textContent = calculateWindChill(temperature, windSpeed);
 });
