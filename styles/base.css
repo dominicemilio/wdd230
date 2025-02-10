@@ -151,7 +151,6 @@ nav a {
   display: block;
 }
 
-/* Hero Image Styling */
 .hero {
   position: relative;
   max-width: 100%;
@@ -167,14 +166,12 @@ nav a {
   display: block;
 }
 
-/* Temple Name Styling */
 .temple-name {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  top: 80px;
+  right: 20px;
   transform: translateX(-50%);
-  background-color: rgba(8, 8, 8, 0.8);
-  /* Matching the header color with opacity */
+  background-color: rgba(8, 8, 8, 0.7);
   color: #FFECD1;
   padding: 10px 20px;
   border-radius: 10px;
