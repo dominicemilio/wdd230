@@ -173,7 +173,7 @@ nav a {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(21, 97, 109, 0.8);
+  background-color: rgba(8, 8, 8, 0.8);
   /* Matching the header color with opacity */
   color: #FFECD1;
   padding: 10px 20px;
