@@ -1,29 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Select the temperature and wind speed elements
-  const tempElement = document.getElementById('temp');
-  const windSpeedElement = document.getElementById('windSpeed');
-  const windChillElement = document.getElementById('windChill');
+  const getElementValue = id => parseFloat(document.getElementById(id).textContent);
 
-  // Extract the numeric values
-  const temperature = parseFloat(tempElement.textContent);
-  const windSpeed = parseFloat(windSpeedElement.textContent);
+  const temperature = getElementValue('temp');
+  const windSpeed = getElementValue('windSpeed');
+  const windChillElement = document.getElementById('windChill');
 
   console.log(`Temperature: ${temperature}°F`);
   console.log(`Wind Speed: ${windSpeed} mph`);
 
-  // Wind Chill Calculation Function
-  function calculateWindChill(temp, speed) {
-    // Check if values meet the criteria
-    if (temp <= 50 && speed > 3.0) {
-      const windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16));
-      return `${windChill.toFixed(1)} °F`;
-    } else {
-      return "N/A";
-    }
-  }
+  const windChill = (temp, speed) =>
+    (temp <= 50 && speed > 3)
+      ? `${(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16).toFixed(1)} °F`
+      : "N/A";
 
-  // Calculate and display wind chill
-  const windChillResult = calculateWindChill(temperature, windSpeed);
-  console.log(`Wind Chill: ${windChillResult}`);
-  windChillElement.textContent = windChillResult;
+  windChillElement.textContent = windChill(temperature, windSpeed);
+  console.log(`Wind Chill: ${windChillElement.textContent}`);
 });

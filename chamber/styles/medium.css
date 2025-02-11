@@ -29,24 +29,39 @@
      text-align: center;
    }
 
-   footer {
+   .footer-container {
      flex-direction: row;
      justify-content: space-between;
-     align-items: flex-start;
+     align-items: center;
+     /* Align items vertically centered */
      text-align: left;
    }
 
-   .footer-left,
-   .footer-center,
-   .footer-right {
-     margin: 0 20px;
-   }
-
    .footer-center {
+     flex: 2;
+     /* Make the center section wider */
      text-align: center;
    }
 
    .footer-right {
-     text-align: right;
+     justify-content: flex-end;
+     /* Push social icons to the far right */
    }
+ }
+
+ /* Social Media Icons */
+ .footer-right {
+   display: flex;
+   gap: 15px;
+ }
+
+ .social-icon {
+   width: 30px;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   opacity: 0.9;
+ }
+
+ .social-icon:hover {
+   transform: scale(1.1);
+   opacity: 1;
  }

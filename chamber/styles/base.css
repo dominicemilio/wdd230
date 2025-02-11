@@ -155,33 +155,49 @@ section>.card {
   color: #fff;
 }
 
-/* Footer Styles */
 footer {
-  background-color: #0033A0;
-  color: #fff;
-  padding: 20px;
+  background-color: #15616D;
+  color: white;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
+  padding: 0 20px;
+  /* Added padding for better spacing on wider screens */
+}
+
+/* Ensure each section has appropriate sizing */
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 30px;
+  margin-bottom: 10px;
+  border-radius: 25px;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  margin: 10px 0;
+  flex: 1;
 }
 
-.footer-logo {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 25px;
-}
-
+/* Link Styling */
 .email,
 .location-link {
-  color: #fff;
+  color: #FFD166;
+  /* Warm gold for contrast */
   text-decoration: none;
 }
 
@@ -190,15 +206,30 @@ footer {
   text-decoration: underline;
 }
 
+/* Icon Styling */
 .map-pin-icon {
   margin-right: 5px;
-  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/* Social Media Icons */
+.footer-right {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .social-icon {
   width: 30px;
-  height: 30px;
-  margin: 0 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  /* Slight transparency for a softer look */
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  /* Full opacity on hover */
 }
 
 /* Dark Mode Styles */
@@ -255,7 +286,7 @@ input:checked+.slider:before {
   transform: translateX(14px);
 }
 
-/* Responsive Styles */
+/* Responsive Styles 
 @media screen and (max-width: 768px) {
   #menu-toggle {
     display: block;
@@ -296,4 +327,4 @@ input:checked+.slider:before {
     background-color: #CE1126;
     color: #fff;
   }
-}
+} */
