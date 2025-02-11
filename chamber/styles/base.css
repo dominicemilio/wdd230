@@ -286,7 +286,6 @@ input:checked+.slider:before {
   transform: translateX(14px);
 }
 
-/* Responsive Styles 
 @media screen and (max-width: 768px) {
   #menu-toggle {
     display: block;
@@ -327,4 +326,4 @@ input:checked+.slider:before {
     background-color: #CE1126;
     color: #fff;
   }
-} */
+}
