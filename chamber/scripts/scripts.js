@@ -1,5 +1,5 @@
 function updateLastModified() {
-  const lastModifiedElement = document.getElementById('last-modified');
+  const lastModifiedElement = document.getElementById("last-modified");
   if (lastModifiedElement) {
     lastModifiedElement.textContent = document.lastModified;
   }
@@ -12,32 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
   });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-  updateLastModified();
-});
+  updateLastModified(); // Ensure last modified is updated on load
 
-document.addEventListener("DOMContentLoaded", () => {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
-  const elementsToDarken = document.querySelectorAll('body, header, nav a, .card, .cta-button, footer, .email, .location-link, blockquote, #nav-menu, .social-icon, .slider');
+  const elementsToDarken = document.querySelectorAll(
+    "body, header, nav a, .card, .cta-button, footer, .email, .location-link, blockquote, #nav-menu, .social-icon, .slider"
+  );
 
-  function toggleDarkMode(isDark) {
-    elementsToDarken.forEach(element => {
-      if (isDark) {
-        element.classList.add("dark-mode");
-      } else {
-        element.classList.remove("dark-mode");
-      }
+  function applyDarkMode(isDark) {
+    elementsToDarken.forEach((element) => {
+      element.classList.toggle("dark-mode", isDark);
     });
+    localStorage.setItem("darkMode", isDark);
+    darkModeToggle.checked = isDark; // Ensure switch matches state
   }
 
+  // Load stored dark mode preference
   const isDarkMode = localStorage.getItem("darkMode") === "true";
-  toggleDarkMode(isDarkMode);
+  applyDarkMode(isDarkMode);
 
   darkModeToggle.addEventListener("change", () => {
-    const isDark = document.body.classList.toggle("dark-mode");
-    toggleDarkMode(isDark);
-    localStorage.setItem("darkMode", isDark);
+    applyDarkMode(darkModeToggle.checked);
   });
 });
