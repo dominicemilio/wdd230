@@ -254,6 +254,21 @@ nav.dark-mode a:hover {
   color: #FFCD00;
 }
 
+/* Mobile Nav Menu Items in Dark Mode */
+#nav-menu.dark-mode a {
+  border-bottom: 1px solid #333333;
+  /* Dark mode border color */
+}
+
+#nav-menu.dark-mode a:last-child {
+  border-bottom: none;
+  /* Remove border from the last item */
+}
+
+.dark-mode #nav-menu li {
+  border: 1px solid #333333 !important;
+}
+
 /* Cards in Dark Mode */
 .card.dark-mode {
   background-color: #1e1e1e;
