@@ -233,13 +233,78 @@ footer {
 }
 
 /* Dark Mode Styles */
-.dark-mode {
+/* General Body Styling for Dark Mode */
+body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
 }
 
+/* Header in Dark Mode */
 header.dark-mode {
   background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Links in Dark Mode */
+nav.dark-mode a {
+  color: #e0e0e0;
+}
+
+nav.dark-mode a:hover {
+  color: #FFCD00;
+}
+
+/* Cards in Dark Mode */
+.card.dark-mode {
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card.dark-mode h3 {
+  color: #FFCD00;
+}
+
+.card.dark-mode p {
+  color: #e0e0e0;
+}
+
+/* Call to Action Button in Dark Mode */
+.cta-button.dark-mode {
+  background-color: #FFCD00;
+  color: #1e1e1e;
+}
+
+.cta-button.dark-mode:hover {
+  background-color: #CE1126;
+  color: #ffffff;
+}
+
+/* Footer in Dark Mode */
+footer.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.email.dark-mode,
+.location-link.dark-mode {
+  color: #FFD166;
+}
+
+/* Social Media Icons in Dark Mode */
+.social-icon.dark-mode {
+  opacity: 0.9;
+}
+
+.social-icon.dark-mode:hover {
+  opacity: 1;
+}
+
+/* Blockquote Styling for Dark Mode */
+blockquote.dark-mode {
+  background-color: #333333;
+  color: #FFCD00;
+  border-left: 4px solid #CE1126;
 }
 
 .switch {

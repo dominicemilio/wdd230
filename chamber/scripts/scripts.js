@@ -20,15 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
-  const isDarkMode = localStorage.getItem("darkMode") === "true";
+  const elementsToDarken = document.querySelectorAll('body, header, nav a, .card, .cta-button, footer, .email, .location-link, blockquote, #nav-menu, .social-icon, .slider');
 
-  if (isDarkMode) {
-    document.body.classList.add("dark-mode");
-    darkModeToggle.checked = true;
+  function toggleDarkMode(isDark) {
+    elementsToDarken.forEach(element => {
+      if (isDark) {
+        element.classList.add("dark-mode");
+      } else {
+        element.classList.remove("dark-mode");
+      }
+    });
   }
 
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+  toggleDarkMode(isDarkMode);
+
   darkModeToggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+    const isDark = document.body.classList.toggle("dark-mode");
+    toggleDarkMode(isDark);
+    localStorage.setItem("darkMode", isDark);
   });
 });
