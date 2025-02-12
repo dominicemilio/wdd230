@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guatape Chamber of Commerce | WDD230 Web Frontend Development</title>
+  <title>Dominic Emilio Clemence | Guatape Chamber of Commerce | WDD230 Web Frontend Development</title>
   <meta name="author" content="Dominic Emilio Clemence">
   <meta name="description"
     content="This is the Guatape Chamber of Commerce website created for learning purposes, an assignment by Dominic Emilio Clemence for the WDD 230 - Web Frontend Development course at BYU-Idaho.">
   <meta property="og:title" content="Guatape Chamber of Commerce | WDD230">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://dominicemilio.github.io/wdd230/chamber/images/guatape.jpg">
-  <meta property="og:url" content="https://dominicemilio.github.io/wdd230/chamber/index.html">
+  <meta property="og:url" content="https://dominicemilio.github.io/wdd230">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -49,10 +49,11 @@
       <h1>Welcome to the Guatape Chamber of Commerce</h1>
       <!-- <img src="images/guatape-hero2.webp" srcset="images/guatape-hero3.webp 480w, images/guatape-hero2.webp 768w"
         sizes="(max-width: 768px) 480px, 768px" alt="Scenic view of Guatape, Colombia"> -->
-
-      <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
-      <source srcset="images/wdd230-org-medium.webp" media="(min-width: 600px)">
-      <img src="images/wdd230-org-small.webp" alt="Hero Image with viewport labels" loading="lazy">
+      <picture>
+        <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
+        <source srcset="images/wdd230-org-medium.webp" media="(min-width: 600px)">
+        <img src="images/wdd230-org-small.webp" alt="Hero Image with viewport labels" loading="lazy">
+      </picture>
 
       <p><strong>Guatape! The Most Beautiful Place on Earth!</strong></p>
     </section>
