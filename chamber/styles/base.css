@@ -347,6 +347,11 @@ input:checked+.slider:before {
   transform: translateX(14px);
 }
 
+.map-pin-icon {
+  width: 5px;
+  height: 5px;
+}
+
 @media screen and (max-width: 768px) {
   #menu-toggle {
     display: block;
