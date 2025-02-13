@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active");
   });
 
-  updateLastModified(); // Ensure last modified is updated on load
+  updateLastModified();
 
   const darkModeToggle = document.getElementById("dark-mode-toggle");
   const elementsToDarken = document.querySelectorAll(
@@ -25,11 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
       element.classList.toggle("dark-mode", isDark);
     });
     localStorage.setItem("darkMode", isDark);
-    darkModeToggle.checked = isDark; // Ensure switch matches state
+    darkModeToggle.checked = isDark;
   }
 
-  // Load stored dark mode preference
-  const isDarkMode = localStorage.getItem("darkMode") === "true";
   applyDarkMode(isDarkMode);
 
   darkModeToggle.addEventListener("change", () => {
