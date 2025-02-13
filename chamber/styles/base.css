@@ -348,7 +348,7 @@ input:checked+.slider:before {
 }
 
 .map-pin-icon {
-  size: 5px;
+  resize: 5px;
 }
 
 @media screen and (max-width: 768px) {
