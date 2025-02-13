@@ -33,7 +33,6 @@
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     /* Align items vertically centered */
      text-align: left;
    }
 
@@ -45,17 +44,14 @@
 
    .footer-center {
      flex: 2;
-     /* Make the center section wider */
      text-align: center;
    }
 
    .footer-right {
      justify-content: flex-end;
-     /* Push social icons to the far right */
    }
  }
 
- /* Social Media Icons */
  .footer-right {
    display: flex;
    gap: 15px;

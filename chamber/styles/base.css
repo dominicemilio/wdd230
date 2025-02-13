@@ -99,14 +99,12 @@ nav {
   color: #FFCD00;
 }
 
-/* Hero Section */
 #hero img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
 }
 
-/* Card Styles */
 .card {
   border: 1px solid #CE1126;
   border-radius: 10px;
@@ -139,7 +137,6 @@ section>.card {
   margin: 10px auto;
 }
 
-/* Call to Action Button */
 .cta-button {
   display: inline-block;
   background-color: #FFCD00;
@@ -171,10 +168,8 @@ footer {
   margin: auto;
   text-align: center;
   padding: 0 20px;
-  /* Added padding for better spacing on wider screens */
 }
 
-/* Ensure each section has appropriate sizing */
 .footer-left,
 .footer-center,
 .footer-right {
@@ -193,11 +188,9 @@ footer {
   flex: 1;
 }
 
-/* Link Styling */
 .email,
 .location-link {
-  color: #FFD166;
-  /* Warm gold for contrast */
+  color: #fdfdfc;
   text-decoration: none;
 }
 
@@ -206,13 +199,11 @@ footer {
   text-decoration: underline;
 }
 
-/* Icon Styling */
 .map-pin-icon {
   margin-right: 5px;
-  font-size: 1.2rem;
+  font-size: 1.75rem;
 }
 
-/* Social Media Icons */
 .footer-right {
   display: flex;
   justify-content: center;
@@ -223,29 +214,23 @@ footer {
   width: 30px;
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.9;
-  /* Slight transparency for a softer look */
 }
 
 .social-icon:hover {
   transform: scale(1.1);
   opacity: 1;
-  /* Full opacity on hover */
 }
 
-/* Dark Mode Styles */
-/* General Body Styling for Dark Mode */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-/* Header in Dark Mode */
 header.dark-mode {
   background-color: #1e1e1e;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Navigation Links in Dark Mode */
 nav.dark-mode a {
   color: #e0e0e0;
 }
@@ -254,22 +239,22 @@ nav.dark-mode a:hover {
   color: #FFCD00;
 }
 
-/* Mobile Nav Menu Items in Dark Mode */
+#hero.dark-mode img {
+  filter: brightness(0.8);
+}
+
 #nav-menu.dark-mode a {
   border-bottom: 1px solid #333333;
-  /* Dark mode border color */
 }
 
 #nav-menu.dark-mode a:last-child {
   border-bottom: none;
-  /* Remove border from the last item */
 }
 
 .dark-mode #nav-menu li {
-  border: 1px solid #333333 !important;
+  border: 1px solid #333333;
 }
 
-/* Cards in Dark Mode */
 .card.dark-mode {
   background-color: #1e1e1e;
   border: 1px solid #333333;
@@ -284,7 +269,6 @@ nav.dark-mode a:hover {
   color: #e0e0e0;
 }
 
-/* Call to Action Button in Dark Mode */
 .cta-button.dark-mode {
   background-color: #FFCD00;
   color: #1e1e1e;
@@ -295,7 +279,6 @@ nav.dark-mode a:hover {
   color: #ffffff;
 }
 
-/* Footer in Dark Mode */
 footer.dark-mode {
   background-color: #1e1e1e;
   color: #e0e0e0;
@@ -306,7 +289,6 @@ footer.dark-mode {
   color: #FFD166;
 }
 
-/* Social Media Icons in Dark Mode */
 .social-icon.dark-mode {
   opacity: 0.9;
 }
@@ -315,7 +297,6 @@ footer.dark-mode {
   opacity: 1;
 }
 
-/* Blockquote Styling for Dark Mode */
 blockquote.dark-mode {
   background-color: #333333;
   color: #FFCD00;
@@ -364,6 +345,10 @@ input:checked+.slider {
 
 input:checked+.slider:before {
   transform: translateX(14px);
+}
+
+.map-pin-icon {
+  size: 5px;
 }
 
 @media screen and (max-width: 768px) {
