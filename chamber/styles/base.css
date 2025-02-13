@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -27,13 +27,13 @@ blockquote {
   border-left: 4px solid #FFCD00;
   padding-left: 10px;
   margin: 20px 0;
-  background-color: #F4F4F4;
+  background-color: #ffffff;
 }
 
 /* Header Styles */
 header {
   background-color: #0033A0;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 0;
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@ nav {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ nav {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -149,12 +149,12 @@ section>.card {
 
 .cta-button:hover {
   background-color: #CE1126;
-  color: #fff;
+  color: #ffffff;
 }
 
 footer {
   background-color: #15616D;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px 10px;
   font-family: Arial, sans-serif;
 }
@@ -190,7 +190,7 @@ footer {
 
 .email,
 .location-link {
-  color: #fdfdfc;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -223,7 +223,7 @@ footer {
 
 body.dark-mode {
   background-color: #121212;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 header.dark-mode {
@@ -232,7 +232,7 @@ header.dark-mode {
 }
 
 nav.dark-mode a {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 nav.dark-mode a:hover {
@@ -266,7 +266,7 @@ nav.dark-mode a:hover {
 }
 
 .card.dark-mode p {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .cta-button.dark-mode {
@@ -281,7 +281,7 @@ nav.dark-mode a:hover {
 
 footer.dark-mode {
   background-color: #1e1e1e;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .email.dark-mode,
