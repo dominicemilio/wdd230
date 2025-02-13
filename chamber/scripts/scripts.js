@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     darkModeToggle.checked = isDark;
   }
 
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
   applyDarkMode(isDarkMode);
 
   darkModeToggle.addEventListener("change", () => {
