@@ -208,19 +208,6 @@ nav a {
   font-weight: 700;
 }
 
-.google-map {
-  width: 100%;
-  height: 500px;
-  border: none;
-  /* Removes border */
-  max-width: 1200px;
-  /* Prevents it from stretching too much on larger screens */
-  display: block;
-  /* Ensures proper spacing */
-  margin: 0 auto;
-  /* Centers the map */
-}
-
 #visits {
   color: navy;
   font-weight: bolder;
