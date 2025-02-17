@@ -203,6 +203,18 @@ nav a {
   list-style-type: none;
 }
 
+.label {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+#visits {
+  color: navy;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
 #map-container {
   width: 88%;
   display: flex;
