@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
@@ -12,60 +12,108 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://dominicemilio.github.io/wdd230/chamber/images/guatape.jpg">
   <meta property="og:url" content="https://dominicemilio.github.io/wdd230/chamber/discover.html">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
   <header>
-    <h1>Discover Guatape</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div id="header-container">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.webp" alt="Logo of the Guatape Chamber of Commerce">
+      </div>
+      <nav>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+      <div class="dark-mode-toggle">
+        <label class="switch">
+          <span>Dark Mode</span>
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
   </header>
 
-  <section class="hero">
-    <img src="images/guatape-hero.jpg" alt="Scenic view of Guatapé">
-    <h2>Experience the Heart of Antioquia</h2>
+  <section class="hero-section">
+    <img class="hero-image" src="images/guatape-hero.jpg" alt="Scenic view of Guatape">
+    <h2 class="hero-title">Experience the Heart of Antioquia</h2>
   </section>
 
-  <section class="demographics">
-    <h2>About Guatapé</h2>
-    <p>Guatapé, a colorful town in Colombia, is famous for its vibrant zócalos, stunning landscapes, and El Peñol rock.
+  <section class="demographics-section">
+    <h2 class="demographics-title">About Guatape</h2>
+    <p class="demographics-text">Guatapé, a colorful town in Colombia, is famous for its vibrant zócalos, stunning
+      landscapes, and El Peñol rock.
     </p>
-    <ul>
-      <li><strong>Population:</strong> 7,000+</li>
-      <li><strong>Climate:</strong> Mild & Tropical</li>
-      <li><strong>Economy:</strong> Tourism, Agriculture, Handicrafts</li>
+    <ul class="demographics-list">
+      <li class="demographics-item"><strong>Population:</strong> 7,000+</li>
+      <li class="demographics-item"><strong>Climate:</strong> Mild & Tropical</li>
+      <li class="demographics-item"><strong>Economy:</strong> Tourism, Agriculture, Handicrafts</li>
     </ul>
   </section>
 
-  <section class="culture">
-    <h2>Culture & Attractions</h2>
-    <p>Explore Guatapé’s rich history, art, and adventure activities, from boat tours to climbing El Peñol.</p>
+  <section class="culture-section">
+    <h2 class="culture-title">Culture & Attractions</h2>
+    <p class="culture-text">Explore Guatape’s rich history, art, and adventure activities, from boat tours to climbing
+      El Penol.</p>
   </section>
 
-  <section class="business">
-    <h2>Business & Growth</h2>
-    <p>Guatapé offers unique opportunities for entrepreneurs in tourism, hospitality, and local crafts.</p>
+  <section class="business-section">
+    <h2 class="business-title">Business & Growth</h2>
+    <p class="business-text">Guatapé offers unique opportunities for entrepreneurs in tourism, hospitality, and local
+      crafts.</p>
   </section>
 
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="image-grid">
-      <img src="images/guatape1.jpg" alt="Colorful streets of Guatapé">
-      <img src="images/guatape2.jpg" alt="View from El Peñol">
-      <img src="images/guatape3.jpg" alt="Local crafts and markets">
+  <section class="gallery-section">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery-grid">
+      <img class="gallery-image" src="images/guatape1.jpg" alt="Colorful streets of Guatape">
+      <img class="gallery-image" src="images/guatape2.jpg" alt="View from El Penol">
+      <img class="gallery-image" src="images/guatape3.jpg" alt="Local crafts and markets">
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Guatape Chamber of Commerce</p>
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <img src="images/logo.svg" alt="Company Logo" class="footer-logo">
+        <p><a class="email" href="mailto:info@chamberofcommerce.com">info@chamberofcommerce.com</a></p>
+        <p>
+          <a href="https://www.google.com/maps/place/Guatape,+Antioquia,+Colombia" target="_blank"
+            class="location-link">
+            <i class="map-pin-icon">📍</i> Guatape, Antioquia
+          </a>
+        </p>
+      </div>
+
+      <!-- Center Section -->
+      <div class="footer-center">
+        <p>Developed by <strong>Dominic Emilio Clemence</strong> for WDD 230</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-right">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
 
 </html>
