@@ -351,6 +351,25 @@ input:checked+.slider:before {
   height: 5px;
 }
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 768px) {
   #menu-toggle {
     display: block;
