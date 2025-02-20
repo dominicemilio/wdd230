@@ -390,6 +390,12 @@ input:checked+.slider:before {
   border-radius: 10px;
 }
 
+.visit-message {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
