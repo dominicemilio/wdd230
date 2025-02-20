@@ -457,14 +457,11 @@ input:checked+.slider:before {
   }
 }
 
-.hero-section,
+
 .sidebar,
-.hero-section,
 .demographics-section,
-.culture-section,
-.business-section,
-.gallery-section {
-  background-color: #d6d5d5;
+.business-section {
+  background-color: rgb(231, 231, 219);
   /* Change this to your desired background color */
   border-radius: 10px;
   /* Adjust the radius as needed */
@@ -476,6 +473,24 @@ input:checked+.slider:before {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.hero-section,
+.culture-section,
+.gallery-section {
+  background-color: #d8cda3;
+  /* Change this to your desired background color */
+  border-radius: 10px;
+  /* Adjust the radius as needed */
+  padding: 20px;
+  /* Optional: Add padding for better spacing */
+  margin-bottom: 20px;
+  /* Optional: Add margin for spacing between sections */
+  border: 1px solid #9e9e9e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
 
 .hero-section:hover,
 .sidebar:hover,
