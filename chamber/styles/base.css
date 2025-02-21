@@ -412,6 +412,24 @@ input:checked+.slider:before {
   transition: opacity 0.5s ease-in;
 }
 
+.culture-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.business-text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.demographics-text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 .gallery-image.loaded {
   opacity: 1;
 }
@@ -465,6 +483,9 @@ input:checked+.slider:before {
   }
 }
 
+.gallery-caption {
+  font-weight: 700;
+}
 
 .sidebar,
 .demographics-section,
@@ -489,8 +510,6 @@ input:checked+.slider:before {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
-
 
 .hero-section:hover,
 .sidebar:hover,
@@ -518,4 +537,10 @@ body.dark-mode .gallery-section {
 body.dark-mode .h1-discover {
   background-color: #333;
   color: #f0f0f0;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }
