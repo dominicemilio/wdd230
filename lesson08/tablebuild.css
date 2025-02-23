@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+:root {
+    /* ------ FILL COLORS ------ */
+    --header-background: #141414;
+    --subheader-background: #434444;
+    --background: #FFFFFF;
+    --zebra-stripes: #bfc4ca;
+    --outer-border: var(--header-background);
+    --inner-border: var(--subheader-background);
+
+    /* ------ TEXT COLORS ------ */
+    --header: #FFFFFF;
+    --subheader: #eaf1f9;
+    --cell: #22252B;
+
+    /* ------ FONTS ------ */
+    --header-font: 'Changa', sans-serif;
+    --normal-font: 'Gabarito', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+table {
+    margin: 1rem;
+    border: solid var(--outer-border);
+    border-collapse: collapse;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--cell);
+    font-family: var(--normal-font);
+}
+
+th,
+td {
+    padding: 1rem 0;
+}
+
+.table-header {
+    background-color: var(--header-background);
+}
+
+.table-header th {
+    color: var(--header);
+    font-family: var(--header-font);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.table-subheader {
+    background-color: var(--subheader-background);
+}
+
+.table-subheader th {
+    color: var(--subheader);
+    font-family: var(--normal-font);
+    font-size: 1.3rem;
+    padding: .5rem 0;
+}
+
+tbody tr th,
+tbody tr td {
+    border-left: thin solid var(--subheader-background);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra-stripes);
+}
+
+tbody tr th {
+    font-size: 1.1rem;
+}
+
+caption {
+    caption-side: bottom;
+}
