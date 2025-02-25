@@ -1,34 +1,36 @@
-document.getElementById("confirm-password").addEventListener("focusout", function () {
-  let pass1 = document.getElementById("password").value;
-  let pass2 = document.getElementById("confirm-password").value;
-  let message = document.getElementById("formmessage");
+// ------ CHECK RE-ENTERED PASSWORD ------
+const pw1 = document.querySelector("#password");
+const pw2 = document.querySelector("#password2");
+const message = document.querySelector("#match-msg");
 
-  if (pass1 !== pass2) {
-    message.textContent = "❗ Passwords do not match!";
-    message.style.display = "block";
-    document.getElementById("confirm-password").value = "";
-    document.getElementById("password").value = "";
-    document.getElementById("password").focus();
-  } else {
-    message.style.display = "none";
-  }
-});
+// pw1.addEventListener("focusout", checkSame);
+pw2.addEventListener("focusout", checkSame);
+// pw2.addEventListener("input", checkSame);
 
-const range = document.getElementById("rating");
-const rangevalue = document.getElementById("rangevalue");
-range.addEventListener("input", function () {
-  rangevalue.textContent = range.value;
-});
+function checkSame() {
+	if (pw1.value !== pw2.value) {
+		message.style.opacity = "1";
+		pw2.style.backgroundColor = "#fff0f3";
+		pw1.value = "";
+		pw2.value = "";
+		pw1.focus();
+	} else {
+		message.style.opacity = "0";
+		pw2.style.backgroundColor = "#0000001a";
+		pw2.style.color = "#555";
+	}
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-  const emailField = document.getElementById("email");
 
-  emailField.addEventListener("input", function () {
-    const emailPattern = /^[a-zA-Z0-9_.\-]+@byui\.edu$/;
-    if (emailPattern.test(emailField.value)) {
-      emailField.style.backgroundColor = "lightgreen";
-    } else {
-      emailField.style.backgroundColor = "";
-    }
-  });
-});
+
+// ------ DISPLAY RATING VALUE ------
+const rangevalue = document.querySelector("#rangevalue");
+const range = document.querySelector("#ratingRange");
+
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
