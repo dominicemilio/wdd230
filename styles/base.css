@@ -259,3 +259,55 @@ footer img {
   height: 50px;
   vertical-align: middle;
 }
+
+/* Join Page Styles */
+#join-main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#join-title {
+  color: #004080;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.join-label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.join-button {
+  padding: 12px;
+  background: #004080;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background: #002850;
+}
