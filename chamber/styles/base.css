@@ -604,6 +604,13 @@ img {
   background-color: #005fa3;
 }
 
+.thank-msg {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0077cc;
+}
+
 /* Dark Mode Styles */
 .dark-mode .join-container {
   background-color: #222;
@@ -624,4 +631,8 @@ img {
 
 .dark-mode .join-button:hover {
   background-color: #004080;
+}
+
+.dark-mode .thank-msg {
+  color: #f5f4f2;
 }
