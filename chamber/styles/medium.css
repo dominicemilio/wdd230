@@ -67,3 +67,29 @@
    transform: scale(1.1);
    opacity: 1;
  }
+
+ .join-container {
+   max-width: 800px;
+   padding: 2rem;
+ }
+
+ .join-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+ }
+
+ .join-label {
+   grid-column: span 2;
+ }
+
+ .join-label input,
+ .join-select,
+ .join-textarea {
+   width: 100%;
+ }
+
+ .join-button {
+   grid-column: span 2;
+ }
+ }

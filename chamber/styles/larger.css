@@ -43,4 +43,16 @@
      height: 25px;
      margin-right: 25px;
    }
+
+   .join-container {
+     max-width: 1000px;
+   }
+
+   .join-form {
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .join-label:nth-child(odd) {
+     grid-column: span 1;
+   }
  }
