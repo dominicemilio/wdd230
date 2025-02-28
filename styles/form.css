@@ -142,12 +142,15 @@ form label.top input:focus-visible:valid {
 
 /* Form messages */
 #match-msg {
-    border-radius: var(--radius);
-    text-align: center;
-    font-family: var(--body-font);
+    color: rgb(228, 9, 9);
+    /* Red for visibility */
+    background-color: rgb(255, 255, 255);
+    /* Keep the background white */
     font-weight: bold;
-    opacity: 0;
-    transition: 0.2s ease-out;
+    padding: 0.5rem;
+    border: 1px solid rgb(228, 9, 9);
+    /* Optional: border for emphasis */
+    border-radius: var(--radius);
 }
 
 /* Submit button */
