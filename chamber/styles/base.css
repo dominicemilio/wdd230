@@ -606,9 +606,15 @@ img {
 
 .thank-msg {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #0077cc;
+}
+
+.thank-list {
+  font-size: 1rem;
+  font-weight: 700;
+
 }
 
 /* Dark Mode Styles */

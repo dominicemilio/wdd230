@@ -48,7 +48,7 @@
       <label class="join-label">Title/Position: <input type="text" name="title" id="title" required
           pattern="[A-Za-z\-\s]{2,}"></label>
       <label class="join-label">Email: <input type="email" name="email" id="email" required
-          placeholder="example@domain.com"></label>
+          placeholder="example@gmail.com"></label>
       <label class="join-label">Phone: <input type="tel" name="phone" id="phone" required></label>
       <label class="join-label">Business/Organization Name: <input type="text" name="business" id="business"
           required></label>
@@ -95,7 +95,15 @@
     </div>
 
   </footer>
-  <script src="scripts/scripts.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const timestampInput = document.getElementById('timestamp');
+      if (timestampInput) {
+        timestampInput.value = new Date().toISOString();
+      }
+    });
+  </script>
 
 </body>
 

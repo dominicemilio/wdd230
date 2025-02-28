@@ -35,3 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     applyDarkMode(darkModeToggle.checked);
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const timestampInput = document.getElementById('timestamp');
+  if (timestampInput) {
+    timestampInput.value = new Date().toISOString();
+  }
+});
