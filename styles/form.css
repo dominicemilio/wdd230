@@ -142,7 +142,7 @@ form label.top input:focus-visible:valid {
 
 /* Form messages */
 #match-msg {
-    color: rgb(228, 9, 9);
+    color: #000;
     /* Red for visibility */
     background-color: rgb(255, 255, 255);
     /* Keep the background white */
