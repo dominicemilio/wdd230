@@ -642,3 +642,71 @@ img {
 .dark-mode .thank-msg {
   color: #f5f4f2;
 }
+
+.directory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directory-menu {
+  margin: 1rem 0;
+}
+
+.directory-menu button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  /* Light background for buttons */
+  border: 1px solid #ccc;
+  /* Border for buttons */
+  color: #333;
+  /* Text color for buttons */
+}
+
+.directory-menu button:hover {
+  background-color: #e0e0e0;
+  /* Lighter background on hover */
+}
+
+#member-list {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.member-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  background-color: #cebcbc;
+  border: rgb(184, 159, 159) 1px solid;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.member-card img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.member-list-item {
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.list-view {
+  display: block;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+}

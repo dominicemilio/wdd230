@@ -92,3 +92,7 @@
  .join-button {
    grid-column: span 2;
  }
+
+ .grid-view {
+   grid-template-columns: repeat(2, 1fr);
+ }
