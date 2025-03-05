@@ -19,23 +19,23 @@ fetch('data/members.json')
       const card = document.createElement('div');
       card.classList.add('member-card');
       card.innerHTML = `
-                    <img src="${member.image}" alt="${member.name} logo">
-                    <h3>${member.name}</h3>
-                    <p>${member.address}</p>
-                    <p>${member.phone}</p>
-                    <a href="${member.website}" target="_blank">Website</a>
-                    <p>Membership: ${member.membershipLevel}</p>
-                `;
+          <img src="${member.image}" alt="${member.name} logo" class="bordered-image">
+          <h3>${member.name}</h3>
+          <p>${member.address}</p>
+          <p>${member.phone}</p>
+          <a href="${member.website}" target="_blank">Website</a>
+          <p>Membership: ${member.membershipLevel}</p>
+      `;
 
       const listItem = document.createElement('div');
       listItem.classList.add('member-list-item');
       listItem.innerHTML = `
-                    <h3>${member.name}</h3>
-                    <p>${member.address}</p>
-                    <p>${member.phone}</p>
-                    <a href="${member.website}" target="_blank">Website</a>
-                    <p>Membership: ${member.membershipLevel}</p>
-                `;
+          <h3>${member.name}</h3>
+          <p>${member.address}</p>
+          <p>${member.phone}</p>
+          <a href="${member.website}" target="_blank">Website</a>
+          <p>Membership: ${member.membershipLevel}</p>
+      `;
 
       memberList.appendChild(card);
       memberList.appendChild(listItem);
