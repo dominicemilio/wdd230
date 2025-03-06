@@ -715,3 +715,31 @@ img {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Default: single column */
+  gap: 20px;
+}
+
+.membership-levels {
+  /* Style the container for membership levels */
+  padding: 1rem;
+  text-align: center;
+}
+
+.membership-level {
+  /* Style each individual membership level */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dark-mode .membership-level {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
