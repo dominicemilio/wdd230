@@ -723,6 +723,22 @@ img {
   gap: 20px;
 }
 
+#non-profit-level {
+  background-color: #e2fce2;
+}
+
+#gold-level {
+  background-color: #f5e798;
+}
+
+#silver-level {
+  background-color: #dadada;
+}
+
+#bronze-level {
+  background-color: #fcbd7d;
+}
+
 .membership-levels {
   /* Style the container for membership levels */
   padding: 1rem;
@@ -749,4 +765,12 @@ img {
   grid-template-columns: 1fr;
   /* Default: single column */
   gap: 20px;
+}
+
+.dark-mode #gold-level,
+.dark-mode #silver-level,
+.dark-mode #bronze-level,
+.dark-mode #non-profit-level {
+  background-color: #333;
+  color: #f0ecec;
 }
