@@ -98,8 +98,8 @@
 }
 
 @media (min-width: 768px) {
-  .join-grid {
-    grid-template-columns: 1fr 1fr;
-    /* Two columns */
+  #join-main {
+    grid-template-columns: 66.66% 33.33%;
+    /* 2/3 and 1/3 split */
   }
 }

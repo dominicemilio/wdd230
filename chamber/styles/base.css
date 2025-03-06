@@ -743,3 +743,10 @@ img {
   color: #f0f0f0;
   border: 1px solid #555;
 }
+
+#join-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Default: single column */
+  gap: 20px;
+}

@@ -41,33 +41,36 @@
   </header>
 
   <main id="join-main" class="join-container">
-    <h1 id="join-title">Join the Chamber</h1>
-    <div class="join-grid">
-      <form id="join-form" class="join-form" method="get" action="thankyou.html">
-        <label class="join-label">First Name: <input type="text" name="first-name" id="first-name" required></label>
-        <label class="join-label">Last Name: <input type="text" name="last-name" id="last-name" required></label>
-        <label class="join-label">Title/Position: <input type="text" name="title" id="title" required
-            pattern="[A-Za-z\-\s]{2,}"></label>
-        <label class="join-label">Email: <input type="email" name="email" id="email" required
-            placeholder="example@gmail.com"></label>
-        <label class="join-label">Phone: <input type="tel" name="phone" id="phone" required></label>
-        <label class="join-label">Business/Organization Name: <input type="text" name="business" id="business"
-            required></label>
-        <label class="join-label">Membership Level:
-          <select name="membership" id="membership" class="join-select">
-            <option value="np">Non-Profit (Free)</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-          </select>
-        </label>
-        <label class="join-label">Business Description:
-          <textarea name="description" id="description" class="join-textarea"></textarea>
-        </label>
-        <input type="hidden" id="timestamp" name="timestamp">
-        <button type="submit" id="join-submit" class="join-button">Send Application</button>
-      </form>
+    <section class="form-fill">
+      <h1 id="join-title">Join the Chamber</h1>
+      <div class="join-grid">
+        <form id="join-form" class="join-form" method="get" action="thankyou.html">
+          <label class="join-label">First Name: <input type="text" name="first-name" id="first-name" required></label>
+          <label class="join-label">Last Name: <input type="text" name="last-name" id="last-name" required></label>
+          <label class="join-label">Title/Position: <input type="text" name="title" id="title" required
+              pattern="[A-Za-z\-\s]{2,}"></label>
+          <label class="join-label">Email: <input type="email" name="email" id="email" required
+              placeholder="example@gmail.com"></label>
+          <label class="join-label">Phone: <input type="tel" name="phone" id="phone" required></label>
+          <label class="join-label">Business/Organization Name: <input type="text" name="business" id="business"
+              required></label>
+          <label class="join-label">Membership Level:
+            <select name="membership" id="membership" class="join-select">
+              <option value="np">Non-Profit (Free)</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+          </label>
+          <label class="join-label">Business Description:
+            <textarea name="description" id="description" class="join-textarea"></textarea>
+          </label>
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button type="submit" id="join-submit" class="join-button">Send Application</button>
+        </form>
+    </section>
 
+    <section class="level-choices">
       <div class="membership-levels">
         <h2>Membership Levels</h2>
         <div class="membership-level">
@@ -91,7 +94,8 @@
             basic training, simple advertising options, and small discounts.</p>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer>
