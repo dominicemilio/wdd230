@@ -18,6 +18,7 @@ h1,
 h2,
 h3 {
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 blockquote {
@@ -102,6 +103,10 @@ nav {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
+}
+
+.beautiful {
+  text-align: center;
 }
 
 .card {
