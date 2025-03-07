@@ -49,18 +49,19 @@
       <h1>Welcome to the Guatape Chamber of Commerce</h1>
       <!-- <img src="images/guatape-hero2.webp" srcset="images/guatape-hero3.webp 480w, images/guatape-hero2.webp 768w"
         sizes="(max-width: 768px) 480px, 768px" alt="Scenic view of Guatape, Colombia"> -->
-      <picture>
-        <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
-        <source srcset="images/wdd230-org-medium.webp" media="(min-width: 600px)">
-        <img src="images/wdd230-org-small.webp" alt="Hero Image with viewport labels" loading="lazy">
-      </picture>
-
-      <p class="beautiful"><strong>Guatape! The Most Beautiful Place on Earth!</strong></p>
+      <div class="hero-image-container">
+        <picture>
+          <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
+          <source srcset="images/wdd230-org-medium.webp" media="(min-width: 600px)">
+          <img src="images/wdd230-org-small.webp" alt="Hero Image with viewport labels" loading="lazy">
+        </picture>
+        <div id="call-to-action">
+          <h2><a href="join.html" class="cta-button">Join the Chamber Now!</a></h2>
+        </div>
+      </div>
     </section>
 
-    <section id="call-to-action">
-      <h2><a href="join.html" class="cta-button">Join the Chamber Now!</a></h2>
-    </section>
+    <p class="beautiful"><strong>Guatape! The Most Beautiful Place on Earth!</strong></p>
 
     <section id="events">
       <div class="h2-events">

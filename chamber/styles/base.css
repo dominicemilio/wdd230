@@ -109,8 +109,18 @@ nav {
   text-align: center;
 }
 
+.hero-image-container {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .card {
-  border: 1px solid #CE1126;
+  border: 1px solid rgb(247, 177, 150);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -172,17 +182,22 @@ section>.card {
 
 .cta-button {
   display: inline-block;
-  background-color: #FFCD00;
-  color: #0033A0;
+  background-color: #CE1126;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  /* Adjust to slightly overlay */
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .cta-button:hover {
-  background-color: #CE1126;
-  color: #ffffff;
+  background-color: #FFCD00;
+  color: black;
 }
 
 footer {
