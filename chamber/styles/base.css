@@ -694,6 +694,39 @@ img {
   color: #f5f4f2;
 }
 
+.dark-mode .beautiful {
+  color: #FFCD00;
+}
+
+.dark-mode .highlight {
+  background-color: #FFCD00;
+  color: #000;
+}
+
+.dark-mode .cta-button {
+  background-color: #CE1126;
+  color: #fff;
+}
+
+.dark-mode .cta-button:hover {
+  background-color: #FFCD00;
+  color: #000;
+}
+
+.dark-mode .events-container,
+.dark-mode .weather-container,
+.dark-mode .spotlights-container {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode .hero-section,
+.dark-mode .culture-section,
+.dark-mode .gallery-section {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
 .directory-container {
   display: flex;
   flex-direction: column;
