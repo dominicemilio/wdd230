@@ -41,6 +41,17 @@ h3 {
   font-weight: 700;
 }
 
+.guatape-section-title {
+  background-color: #78290F !important;
+  text-shadow: #001524 2px 2px 2px !important;
+  color: #FFECD1 !important;
+  font-size: 2rem !important;
+  padding: 1.5rem 0 !important;
+  margin-top: 0 !important;
+  font-weight: 700 !important;
+}
+
+
 hr {
   width: 70%;
   border: 2px solid #15616D;
@@ -310,4 +321,105 @@ textarea {
 
 .join-button:hover {
   background: #002850;
+}
+
+
+.guatape-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.guatape-title {
+  color: #2b2b2b;
+}
+
+.guatape-main {
+  display: flex;
+  justify-content: center;
+}
+
+.guatape-info-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.guatape-section-title {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.guatape-info-item {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.guatape-label {
+  font-weight: bold;
+  color: #444;
+}
+
+.guatape-data {
+  color: #222;
+}
+
+.guatape-weather-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.guatape-weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.guatape-weather-desc {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.guatape-visits-title {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+
+.guatape-visits-label {
+  font-weight: bold;
+}
+
+.guatape-visits-count {
+  color: #222;
+}
+
+.guatape-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.guatape-footer-text {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .guatape-info-card {
+    padding: 15px;
+  }
+
+  .guatape-section-title {
+    font-size: 1.3rem;
+  }
 }

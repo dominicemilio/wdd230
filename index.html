@@ -60,17 +60,27 @@
         <div id="learning-activities"></div>
       </section>
       <section class="card2">
-        <h3>Information</h3>
-        <p>
-          <strong>City, Country:</strong>
-          <span id="location">[City, Country]</span>
+        <h3 class="guatape-section-title">Information</h3>
+        <p class="guatape-info-item">
+          <strong class="guatape-label">City, Country:</strong>
+          <span id="location" class="guatape-data">Loading...</span>
         </p>
-        <p>
-          <strong>Current Weather:</strong>
-          <span id="weather">[Weather Info]</span>
+        <p class="guatape-info-item">
+          <strong class="guatape-label">Current Weather:</strong>
+          <span id="weather" class="guatape-data">Loading...</span>
         </p>
-        <h4><span class="label">Number of Visits: </span><span class="visits"></span></h4>
-
+        <p class="guatape-info-item">
+          <strong class="guatape-label">Temperature:</strong>
+          <span id="temperature" class="guatape-data">Loading...</span>
+        </p>
+        <figure class="guatape-weather-figure">
+          <img id="weather-icon" class="guatape-weather-icon" src="" alt="">
+          <figcaption id="weather-description" class="guatape-weather-desc"></figcaption>
+        </figure>
+        <h4 class="guatape-visits-title">
+          <span class="guatape-visits-label">Number of Visits: </span>
+          <span class="visits guatape-visits-count"></span>
+        </h4>
       </section>
     </div>
   </main>
@@ -91,6 +101,7 @@
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/visits.js"></script>
+  <script src="scripts/guatape-weather.js"></script>
   <script src="scripts/links.js"></script>
 </body>
 
