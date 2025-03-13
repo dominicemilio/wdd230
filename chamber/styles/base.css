@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* CSS Variables */
 :root {
   --primary-color: #0033A0;
   --secondary-color: #FFCD00;
@@ -12,7 +11,6 @@
   --dark-container: #333;
 }
 
-/* General Reset and Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -71,7 +69,6 @@ header {
   border: 2px solid #070707;
 }
 
-/* Navigation Styles */
 nav {
   display: flex;
   align-items: center;
@@ -274,7 +271,6 @@ footer {
   opacity: 1;
 }
 
-/* Dark Mode Styles */
 body.dark-mode {
   background-color: var(--dark-background);
   color: var(--dark-text);
