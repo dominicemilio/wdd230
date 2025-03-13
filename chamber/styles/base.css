@@ -207,6 +207,10 @@ section>.card {
   color: black;
 }
 
+p {
+  font-weight: 600;
+}
+
 footer {
   background-color: #15616D;
   color: white;
@@ -893,4 +897,145 @@ img {
     background-color: #CE1126;
     color: var(--dark-text);
   }
+}
+
+.event-banner {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 12px 0;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  /* Hidden by default */
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.event-banner.show {
+  display: block;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner-content p {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+#close-banner {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  color: var(--text-color);
+}
+
+/* Weather styles */
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(224, 224, 224);
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  margin: 20px 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.current-weather,
+.forecast-weather {
+  min-width: 250px;
+  flex: 1;
+}
+
+.weather-icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+#weather-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.weather-icon {
+  background-color: rgba(156, 156, 156, 0.5);
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 80px;
+}
+
+.forecast-day {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.forecast-icon {
+  background-color: rgb(170, 170, 170);
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .event-banner {
+  background-color: var(--primary-color);
+  color: var(--dark-text);
+}
+
+body.dark-mode #close-banner {
+  color: var(--dark-text);
+}
+
+body.dark-mode .weather-container {
+  background-color: var(--dark-container);
+}
+
+body.dark-mode .card {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+}
+
+body.dark-mode .forecast-item {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #weather-icon-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
 }
