@@ -30,33 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
     'description': () => true
   };
 
-  const LIGHT_MODE_DEFAULT = '#FFFFFF';
-  const LIGHT_MODE_VALID = '#E8F0FE';
-  const DARK_MODE_DEFAULT = '#333333';
-  const DARK_MODE_VALID = '#E8F0FE';
-
   function updateFieldBackground(fieldId) {
     const field = formFields[fieldId];
     if (!field) return;
 
     const isValid = validators[fieldId](field.value);
-    const isDarkMode = darkModeToggle.checked || document.body.classList.contains('dark-mode');
 
-    console.log(`Field: ${fieldId}, Value: ${field.value}, Valid: ${isValid}, Dark Mode: ${isDarkMode}`);
+    console.log(`Field: ${fieldId}, Value: ${field.value}, Valid: ${isValid}`);
 
     if (isValid && (field.value.length > 0 || fieldId === 'membership')) {
-      field.style.backgroundColor = LIGHT_MODE_VALID;
-      console.log(`Setting ${fieldId} to valid color: ${LIGHT_MODE_VALID}`);
+      console.log(`Setting ${fieldId} to valid`);
     } else {
-      field.style.backgroundColor = isDarkMode ? DARK_MODE_DEFAULT : LIGHT_MODE_DEFAULT;
-      console.log(`Setting ${fieldId} to default color: ${isDarkMode ? DARK_MODE_DEFAULT : LIGHT_MODE_DEFAULT}`);
+      // Use CSS variables. The default styles will apply.
+      // field.style.backgroundColor = isDarkMode ? 'var(--dark-input-bg-default)' : 'var(--input-bg-default)';
+      // console.log(`Setting ${fieldId} to default color`); // No longer needed
     }
   }
 
   function updateMembershipField() {
     const membershipField = formFields['membership'];
     if (membershipField) {
-      membershipField.style.backgroundColor = LIGHT_MODE_VALID;
       console.log('Setting membership to valid color');
     }
   }
