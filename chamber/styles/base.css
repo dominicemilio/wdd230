@@ -225,6 +225,10 @@
    position: relative;
  }
 
+ .hero-image {
+   border-radius: 10px;
+ }
+
  .hero img {
    width: 100%;
    height: auto;
@@ -731,6 +735,7 @@
    height: 150px;
    display: block;
    opacity: 0;
+   border-radius: 10px;
    transition: opacity 0.5s ease-in;
  }
 
