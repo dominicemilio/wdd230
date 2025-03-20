@@ -56,3 +56,24 @@ navLinks.forEach(link => {
     link.classList.add("active");
   }
 });
+
+function shouldShowBanner() {
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  return dayOfWeek >= 1 && dayOfWeek <= 3;
+}
+
+function updateBannerVisibility() {
+  const banner = document.getElementById('event-banner');
+  if (shouldShowBanner()) {
+    banner.style.display = 'block';
+  } else {
+    banner.style.display = 'none';
+  }
+}
+
+document.getElementById('close-banner').addEventListener('click', function () {
+  document.getElementById('event-banner').style.display = 'none';
+});
+
+window.addEventListener('load', updateBannerVisibility);
