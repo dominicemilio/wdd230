@@ -54,7 +54,7 @@
               placeholder="example@gmail.com"></label>
           <label class="join-label">Phone: <input type="tel" name="phone" id="phone" required></label>
           <label class="join-label">Business/Organization Name: <input type="text" name="business" id="business"
-              required></label>
+              pattern="^[a-zA-Z\s\-]{7,}$" required></label>
           <label class="join-label">Membership Level:
             <select name="membership" id="membership" class="join-select">
               <option value="np">Non-Profit (Free)</option>
