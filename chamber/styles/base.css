@@ -1127,3 +1127,56 @@
      bottom: 30px;
    }
  }
+
+ #first-name,
+ #last-name,
+ #title,
+ #email,
+ #phone,
+ #business,
+ #membership,
+ #description {
+   transition: background-color 0.3s ease;
+   padding: 8px;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   width: 100%;
+   box-sizing: border-box;
+ }
+
+ #membership {
+   background-color: #E8F0FE !important;
+ }
+
+ #title:valid,
+ #business:valid {
+   background-color: #E8F0FE;
+ }
+
+ #first-name:focus,
+ #last-name:focus,
+ #title:focus,
+ #email:focus,
+ #phone:focus,
+ #business:focus,
+ #membership:focus,
+ #description:focus {
+   outline: none;
+   border-color: #4a90e2;
+ }
+
+ body.dark-mode #first-name,
+ body.dark-mode #last-name,
+ body.dark-mode #title,
+ body.dark-mode #email,
+ body.dark-mode #phone,
+ body.dark-mode #business,
+ body.dark-mode #description {
+   background-color: #333333;
+   color: white;
+   border-color: #555;
+ }
+
+ body.dark-mode #membership {
+   color: black;
+ }
