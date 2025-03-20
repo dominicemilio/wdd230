@@ -65,6 +65,9 @@ function shouldShowBanner() {
 
 function updateBannerVisibility() {
   const banner = document.getElementById('event-banner');
+  if (banner === null) {
+    return;
+  }
   if (shouldShowBanner()) {
     banner.style.display = 'block';
   } else {
@@ -72,8 +75,11 @@ function updateBannerVisibility() {
   }
 }
 
-document.getElementById('close-banner').addEventListener('click', function () {
-  document.getElementById('event-banner').style.display = 'none';
-});
+const bannerCloseBtn = document.getElementById('close-banner');
+if (bannerCloseBtn) {
+  bannerCloseBtn.addEventListener('click', function () {
+    document.getElementById('event-banner').style.display = 'none';
+  });
+}
 
 window.addEventListener('load', updateBannerVisibility);
