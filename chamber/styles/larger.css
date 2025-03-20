@@ -1,0 +1,97 @@
+@media (min-width: 1025px) {
+  #nav-menu {
+    gap: 30px;
+  }
+
+  #hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  #events .card,
+  #weather .card,
+  #spotlights .card {
+    width: calc(33.33% - 20px);
+  }
+
+  footer {
+    padding: 20px 50px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .location-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .map-pin-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+  }
+
+  .join-container {
+    max-width: 1000px;
+  }
+
+  .join-form {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .join-label:nth-child(odd) {
+    grid-column: span 1;
+  }
+
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.list-view .member-card {
+  display: none;
+}
+
+.grid-view .member-list-item {
+  display: none;
+}
+
+body.dark-mode .directory-container,
+body.dark-mode .member-card,
+body.dark-mode .member-list-item {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode .member-list-item {
+  border-bottom-color: #555;
+}
+
+body.dark-mode .member-card a,
+body.dark-mode .member-list-item a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+body.dark-mode .directory-menu button {
+  background-color: #555;
+  border-color: #777;
+  color: #fff;
+}
+
+body.dark-mode .directory-menu button:hover {
+  background-color: #777;
+}

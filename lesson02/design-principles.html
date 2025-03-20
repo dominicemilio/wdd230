@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD230 Design Principles</title>
+  <meta name="author" content="Dominic Emilio Clemence">
+  <meta name="description" content="WDD230 | Web Frontend Development | Design Principle Examples">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Design Principles Document</h1>
+    <h2>Dominic Emilio Clemence</h2>
+  </header>
+
+  <main>
+    <section class="first-card">
+      <h3>Visual Hierarchy</h3>
+      <p>The New York Times</p>
+      <a href="https://www.nytimes.com/">nytimes.com</a>
+      <img src="images/the-nyt.webp" alt="The NYT Screenshot">
+      <p class="text">
+        The New York Times homepage demonstrates a clear visual hierarchy that draws the reader's attention to key
+        elements, resembling the printed version of the newspaper but in a more dynamic way. Key features include:
+      </p>
+      <ul>
+        <li><strong>Top Navigation/Masthead:</strong> Allows users to select categories like "News" or "Sports."</li>
+        <li><strong>Hero Section:</strong> Features a large image or video with a headline to highlight top stories.
+        </li>
+        <li><strong>Other Headlines:</strong> Diverse stories, sometimes with accompanying images.</li>
+        <li><strong>Article Summaries:</strong> Brief summaries that complement headlines.</li>
+        <li><strong>Section Headings:</strong> Clearly distinguishable headings (e.g., "U.S.," "World," "Business").
+        </li>
+        <li><strong>Color and Contrast:</strong> Conservative palette of black, gray, and white for readability.</li>
+        <li><strong>Whitespace:</strong> Effective use of whitespace to separate different elements.</li>
+        <li><strong>Font Size and Weight:</strong> Varying sizes and weights create a clear hierarchy.</li>
+      </ul>
+      <p>In summary, the NYT homepage effectively organizes information with a well-defined visual hierarchy.</p>
+    </section>
+
+    <section class="second-card">
+      <h3>Fitt's Law</h3>
+      <p>Netflix</p>
+      <a href="https://www.netflix.com/">netflix.com</a>
+      <img src="images/netflix.webp" alt="Netflix Screenshot">
+      <p class="text">
+        Fitts's Law states that people can navigate faster and more easily when targets are larger and closer. Netflix
+        applies this principle in several ways:
+      </p>
+      <ul>
+        <li><strong>Large, Clickable Thumbnails:</strong> Big thumbnails reduce the time required to make selections.
+        </li>
+        <li><strong>Prominent Play Buttons:</strong> Play buttons appear prominently when hovering over thumbnails.</li>
+        <li><strong>Row-Based Layout:</strong> Horizontal rows minimize navigation distance.</li>
+        <li><strong>"Next" and "Previous" Buttons:</strong> Large, edge-positioned buttons aid in navigation.</li>
+        <li><strong>Focus on Hover:</strong> Hovering reveals additional options, like "Add to My List."</li>
+      </ul>
+      <p>By leveraging Fitts's Law, Netflix ensures quick and effortless navigation of its vast library.</p>
+    </section>
+
+    <section class="third-card">
+      <h3>Whitespace and Clean Design</h3>
+      <p>Scope Copenhagen</p>
+      <a href="https://scopecopenhagen.com/">scopecopenhagen.com</a>
+      <img src="images/scope.webp" alt="Scope Copenhagen Screenshot">
+      <p class="text">
+        Scope Copenhagen's website exemplifies the effective use of whitespace and clean design, creating a visually
+        elegant experience. Specific elements include:
+      </p>
+      <ul>
+        <li><strong>Ample Use of Whitespace:</strong> Generous negative space separates content and enhances
+          readability.</li>
+        <li><strong>Neutral Color Palette:</strong> Subtle tones create a calming and sophisticated appearance.</li>
+        <li><strong>Clear Visual Hierarchy:</strong> Thoughtful typography and spacing guide the user naturally.</li>
+        <li><strong>Minimalist Navigation Menu:</strong> A clean, simple menu prioritizes usability.</li>
+        <li><strong>High-Quality Imagery:</strong> Large images integrate seamlessly with whitespace to avoid visual
+          clutter.</li>
+      </ul>
+      <p>Scope Copenhagen's design goes beyond functionality, reflecting Scandinavian minimalism and elegance.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> <span class="line-break">Dominic Emilio Clemence</span>
+      <span class="line-break">Colombia</span>
+      <img src="../images/colombian-flag2.webp" alt="Flag of Colombia" width="50" height="50">
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="../scripts/getdates.js"></script>
+</body>
+
+</html>

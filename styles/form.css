@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    /* Fonts */
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Lora", serif;
+
+    /* Colors */
+    --valid: rgb(5, 112, 5);
+    --invalid: rgb(228, 9, 9);
+    --shadow-color: #27333ab6;
+
+    /* Other variables */
+    --radius: .5rem;
+}
+
+/* ------ BODY ------ */
+body {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+    max-width: 900px;
+    width: 95%;
+    min-width: 350px;
+    background-color: #eef2f3;
+    font-family: var(--body-font);
+}
+
+#content {
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+/* ------ MAIN ------ */
+main {
+    display: grid;
+    gap: 1.5em 0;
+    grid-template-columns: 25px 1fr 25px;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+main h2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+/* ------ FORM ------ */
+form {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+    border: solid .5px #354F52;
+    border-radius: var(--radius);
+    padding: 0.5rem 2rem 1rem;
+    width: 70%;
+    max-width: 25rem;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 10px var(--shadow-color);
+}
+
+
+form legend {
+    border: solid 2px #2F3E46;
+    border-radius: var(--radius);
+    padding: 0.5rem 1.5rem;
+    background-color: #2F3E46;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1.5rem;
+    color: #354F52;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form label.top input {
+    display: block;
+    border: solid 1px #999;
+    border-radius: var(--radius);
+    padding: 0.75rem;
+    width: 90%;
+    max-width: 25rem;
+    color: #555;
+    font-size: 1rem;
+    background-color: #0000001a;
+}
+
+/* Form input validation */
+form label.top input:required {
+    background-color: rgba(255, 0, 0, 0.1);
+    /* Light red for invalid input */
+}
+
+form label.top input:required:valid {
+    background-color: rgba(0, 255, 0, 0.1);
+    /* Light green for valid input */
+}
+
+form label.top input:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white on focus */
+}
+
+form label.top input:focus-visible {
+    outline-color: var(--invalid);
+}
+
+form label.top input:focus-visible:valid {
+    outline-color: var(--valid);
+}
+
+/* Range input */
+#rangevalue {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #354F52;
+}
+
+#ratingRange {
+    width: 330px;
+    margin-bottom: 0;
+}
+
+/* Form messages */
+#match-msg {
+    color: #000;
+    /* Red for visibility */
+    background-color: rgb(255, 255, 255);
+    /* Keep the background white */
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 1px solid rgb(228, 9, 9);
+    /* Optional: border for emphasis */
+    border-radius: var(--radius);
+}
+
+/* Submit button */
+form input.submitButton {
+    margin: 0 0 2rem 2%;
+    border: none;
+    border-radius: var(--radius);
+    padding: 1rem;
+    width: 60%;
+    max-width: 20rem;
+    min-width: 15rem;
+    color: #ffffffe6;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #0b7032;
+    transition: 0.2s ease-in;
+}
+
+form input.submitButton:hover {
+    transform: scale(0.95);
+    box-shadow: inset 0 5px 10px var(--shadow-color);
+    color: #FFFFFF;
+}
+
+form input.submitButton:active {
+    background-color: #332d2d;
+}
+
+/* ------ RECORD PAGE MESSAGE ------ */
+.record-msg {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.main-msg,
+.welcome-msg {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.note-msg {
+    font-family: var(--body-font);
+    font-size: 2rem;
+}
+
+
+#lastModified {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}

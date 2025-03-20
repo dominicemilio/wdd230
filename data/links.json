@@ -1,0 +1,134 @@
+{
+  "lessons": [
+      {
+          "lesson": "01",
+          "links": [
+              {
+                  "url": "./lesson01/holygrail.html",
+                  "title": "Holy Grail Layout"
+              },
+              {
+                  "url": "https://codepen.io/Emilio-Clemence/pen/gbYvgOm",
+                  "title": "JS Pen"
+              }
+          ]
+      },
+      {
+          "lesson": "02",
+          "links": [
+              {
+                  "url": "./lesson02/design.html",
+                  "title": "Design"
+              },
+              {
+                  "url": "./lesson02/media-query.html",
+                  "title": "CSS Media Queries"
+              },
+              {
+                  "url": "./lesson02/design-principles.html",
+                  "title": "Design Principles Document"
+              }
+          ]
+      },
+      {
+          "lesson": "03",
+          "links": [
+              {
+                  "url": "./lesson03/images/combinator.webp",
+                  "title": "Combinators"
+              },
+              {
+                  "url": "https://codepen.io/Dominic-Clemence/pen/ZYzjrgB",
+                  "title": "Pseudo Element"
+              },
+              {
+                  "url": "https://codepen.io/Dominic-Clemence/pen/JoPBZrW",
+                  "title": "Responsive Menu Classes"
+              }
+          ]
+      },
+      {
+          "lesson": "04",
+          "links": [
+              {
+                  "url": "https://codepen.io/Emilio-Clemence/pen/zxOMaMO",
+                  "title": "Pseudo Classes"
+              }
+          ]
+      },
+      {
+          "lesson": "05",
+          "links": [
+              {
+                  "url": "./lesson05/bom.html",
+                  "title": "The Book of Mormon Favorite Chapters App"
+              }
+          ]
+      },
+      {
+          "lesson": "06",
+          "links": [
+              {
+                  "url": "./lesson06/images/landscape.webp",
+                  "title": "WebP image format"
+              },
+              {
+                  "url": "./lesson06/responsive-images.html",
+                  "title": "Responsive Images: SRC"
+              }
+          ]
+      },
+      {
+          "lesson": "07",
+          "links": [
+              {
+                  "url": "./lesson07/lazyload.html",
+                  "title": "Lazy load images"
+              },
+              {
+                  "url": "./lesson07/bom.html",
+                  "title": "Favorite CHapters App"
+              }
+          ]
+      },
+      {
+          "lesson": "08",
+          "links": [
+              {
+                  "url": "./lesson08/tablebuild.html",
+                  "title": "HTML Tables"
+              },
+              {
+                  "url": "./lesson08/index.html",
+                  "title": "HTML Forms"
+              },
+              {
+                  "url": "./form.html",
+                  "title": "Form Build"
+              }
+          ]
+      },
+      {
+          "lesson": "09",
+          "links": [
+              {
+                  "url": "./lesson09/new-ward-members.json",
+                  "title": "JSON Activity"
+              },
+              {
+                  "url": "./lesson09/prophets.html",
+                  "title": "Fetch API"
+              }
+          ]
+      },
+      {
+          "lesson": "10",
+          "links": [
+              {
+                  "url": "./lesson10/weather.html",
+                  "title": "Weather API"
+              }
+          ]
+      }
+  ]
+}

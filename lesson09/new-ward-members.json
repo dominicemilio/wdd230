@@ -1,0 +1,40 @@
+{
+  "wardInformation": {
+    "familyName": "Anderson",
+    "moveInDate": "2023-07-10",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Matthew Anderson",
+        "gender": "Male",
+        "birthdate": "1987-06-15"
+      },
+      {
+        "name": "Sarah Anderson",
+        "gender": "Female",
+        "birthdate": "1990-12-22"
+      },
+      {
+        "name": "Lucas Anderson",
+        "gender": "Male",
+        "birthdate": "2011-03-18"
+      },
+      {
+        "name": "Olivia Anderson",
+        "gender": "Female",
+        "birthdate": "2013-09-05"
+      },
+      {
+        "name": "Benjamin Anderson",
+        "gender": "Male",
+        "birthdate": "2016-05-29"
+      },
+      {
+        "name": "Ava Anderson",
+        "gender": "Female",
+        "birthdate": "2019-10-12"
+      }
+    ]
+  }
+}

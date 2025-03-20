@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Guatape Adventures",
+      "address": "Calle 32 # 45-67, Guatape",
+      "phone": "+57 310 123 4567",
+      "website": "http://guatapeadventures.com",
+      "image": "./images/adventures.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "El Peñol View Hotel",
+      "address": "Carrera 28 # 12-34, El Peñol",
+      "phone": "+57 311 234 5678",
+      "website": "http://elpenolviewhotel.com",
+      "image": "./images/hotel.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Guatape Eats",
+      "address": "Calle 30 # 23-45, Guatape",
+      "phone": "+57 312 345 6789",
+      "website": "http://guatapeeats.com",
+      "image": "./images/eats.webp",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Guatape Lake Tours",
+      "address": "Muelle de Guatape, Guatape",
+      "phone": "+57 313 456 7890",
+      "website": "http://guatapelaketours.com",
+      "image": "./images/tours.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Guatape Crafts & Gifts",
+      "address": "Calle Principal # 10-20, Guatape",
+      "phone": "+57 314 567 8901",
+      "website": "http://guatapecraftsgifts.com",
+      "image": "./images/crafts.webp",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Guatape Coffee Plantation",
+      "address": "Vereda La Cristalina, Guatape",
+      "phone": "+57 315 678 9012",
+      "website": "http://guatapecoffee.com",
+      "image": "./images/coffee.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Guatape Bike Rentals",
+      "address": "Calle 25 # 15-30, Guatape",
+      "phone": "+57 316 789 0123",
+      "website": "http://guatapebikes.com",
+      "image": "./images/bike.webp",
+      "membershipLevel": "Bronze"
+    }
+  ]
+}
