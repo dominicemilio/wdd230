@@ -47,8 +47,9 @@
         <form id="join-form" class="join-form" method="get" action="thankyou.html">
           <label class="join-label">First Name: <input type="text" name="first-name" id="first-name" required></label>
           <label class="join-label">Last Name: <input type="text" name="last-name" id="last-name" required></label>
-          <label class="join-label">Title/Position: <input type="text" name="title" id="title"
-              pattern="[A-Za-z\-\s]{2,}"></label>
+          <label class="join-label">Title/Position:
+            <input type="text" name="title" id="title" pattern="^[a-zA-Z\s\-]{7,}$" required>
+          </label>
           <label class="join-label">Email: <input type="email" name="email" id="email" required
               placeholder="example@gmail.com"></label>
           <label class="join-label">Phone: <input type="tel" name="phone" id="phone" required></label>
