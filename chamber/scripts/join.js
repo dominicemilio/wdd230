@@ -36,21 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const isValid = validators[fieldId](field.value);
 
-    console.log(`Field: ${fieldId}, Value: ${field.value}, Valid: ${isValid}`);
-
     if (isValid && (field.value.length > 0 || fieldId === 'membership')) {
-      console.log(`Setting ${fieldId} to valid`);
+      // Intentionally empty
     } else {
       // Use CSS variables. The default styles will apply.
       // field.style.backgroundColor = isDarkMode ? 'var(--dark-input-bg-default)' : 'var(--input-bg-default)';
-      // console.log(`Setting ${fieldId} to default color`); // No longer needed
     }
   }
 
   function updateMembershipField() {
     const membershipField = formFields['membership'];
     if (membershipField) {
-      console.log('Setting membership to valid color');
+      // Intentionally empty
     }
   }
 
@@ -91,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (darkModeToggle) {
     darkModeToggle.addEventListener('change', () => {
-      console.log('Dark mode changed');
       updateAllFields();
     });
   }
