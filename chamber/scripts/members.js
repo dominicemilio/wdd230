@@ -6,43 +6,80 @@ if (gridBtn && listBtn && memberList) {
   gridBtn.addEventListener('click', () => {
     memberList.classList.remove('list-view');
     memberList.classList.add('grid-view');
+    renderMembersGrid();
   });
 
   listBtn.addEventListener('click', () => {
     memberList.classList.remove('grid-view');
     memberList.classList.add('list-view');
+    renderMembersList();
   });
+
+  let membersData = [];
 
   fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
-      data.members.forEach(member => {
-        const card = document.createElement('div');
-        card.classList.add('member-card');
-        card.innerHTML = `
-            <img src="${member.image}" alt="${member.name} logo" class="bordered-image">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Website</a>
-            <p>Membership: ${member.membershipLevel}</p>
-        `;
-
-        const listItem = document.createElement('div');
-        listItem.classList.add('member-list-item');
-        listItem.innerHTML = `
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Website</a>
-            <p>Membership: ${member.membershipLevel}</p>
-        `;
-
-        memberList.appendChild(card);
-        memberList.appendChild(listItem);
-      });
+      membersData = data.members;
+      renderMembersGrid();
     })
     .catch(error => console.error('Error loading member directory:', error));
+
+  function renderMembersGrid() {
+    memberList.innerHTML = '';
+
+    membersData.forEach(member => {
+      const card = document.createElement('div');
+      card.classList.add('member-card');
+      card.innerHTML = `
+        <img src="${member.image}" alt="${member.name} logo" class="bordered-image">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Website</a>
+        <p>Membership: ${member.membershipLevel}</p>
+      `;
+
+      memberList.appendChild(card);
+    });
+  }
+
+  function renderMembersList() {
+    memberList.innerHTML = '';
+
+    const table = document.createElement('table');
+    table.classList.add('members-table');
+
+    const thead = document.createElement('thead');
+    thead.innerHTML = `
+      <tr>
+        <th>Business Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>Website</th>
+        <th>Membership Level</th>
+      </tr>
+    `;
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    membersData.forEach(member => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${member.name}</td>
+        <td>${member.address}</td>
+        <td>${member.phone}</td>
+        <td><a href="${member.website}" target="_blank">Website</a></td>
+        <td>${member.membershipLevel}</td>
+      `;
+
+      tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    memberList.appendChild(table);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
