@@ -1270,9 +1270,9 @@
  }
 
  body.dark-mode #membership:valid {
-   background-color: var(--dark-input-bg-valid);
+   background-color: #555;
  }
 
  body.dark-mode #description:valid {
-   background-color: var(--dark-input-bg-valid);
+   background-color: #555;
  }
