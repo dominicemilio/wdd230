@@ -1215,11 +1215,9 @@
    padding: 8px;
    border-radius: 4px;
    border: 1px solid var(--input-border-color);
-   /* Use the variable */
    width: 100%;
    box-sizing: border-box;
    background-color: var(--input-bg-default);
-   /* Use the variable */
    color: var(--input-text-color);
  }
 
@@ -1244,6 +1242,15 @@
    border-color: var(--input-focus-border-color);
  }
 
+ body.dark-mode #title:valid,
+ body.dark-mode #business:valid,
+ body.dark-mode #first-name:valid,
+ body.dark-mode #last-name:valid,
+ body.dark-mode #email:valid,
+ body.dark-mode #phone:valid {
+   background-color: var(--dark-input-bg-valid);
+ }
+
  body.dark-mode #first-name,
  body.dark-mode #last-name,
  body.dark-mode #title,
@@ -1256,11 +1263,16 @@
    border-color: var(--dark-input-border-color);
  }
 
- body.dark-mode #title:valid,
- body.dark-mode #business:valid,
- body.dark-mode #first-name:valid,
- body.dark-mode #last-name:valid,
- body.dark-mode #email:valid,
- body.dark-mode #phone:valid {
+ body.dark-mode #membership {
+   background-color: var(--dark-input-bg-default);
+   color: var(--dark-input-text-color);
+   border-color: var(--dark-input-border-color);
+ }
+
+ body.dark-mode #membership:valid {
+   background-color: var(--dark-input-bg-valid);
+ }
+
+ body.dark-mode #description:valid {
    background-color: var(--dark-input-bg-valid);
  }
