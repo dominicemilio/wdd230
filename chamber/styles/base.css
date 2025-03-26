@@ -1280,3 +1280,110 @@
  body.dark-mode #description:valid {
    background-color: #555;
  }
+
+ .members-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 1rem 0;
+ }
+
+ .members-table th,
+ .members-table td {
+   padding: 0.75rem;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+ }
+
+ .members-table th {
+   background-color: #f0f0f0;
+   font-weight: bold;
+   border-bottom: 2px solid #ccc;
+   white-space: nowrap;
+ }
+
+ @media (max-width: 600px) {
+
+   .members-table thead {
+     display: none;
+     border: none;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     width: 1px;
+   }
+
+   .members-table tr {
+     display: block;
+     margin-bottom: 1em;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     padding: 0.5em;
+     background-color: #f9f9f9;
+   }
+
+   .dark-mode .members-table tr {
+     background-color: #3a3a3a;
+     border: 1px solid #555;
+   }
+
+   .members-table td {
+     display: block;
+     text-align: right;
+     border-bottom: 1px dotted #eee;
+     padding-left: 50%;
+     position: relative;
+     min-height: 1.5em;
+     padding-top: 0.35em;
+     padding-bottom: 0.35em;
+   }
+
+   .dark-mode .members-table td {
+     border-bottom: 1px dotted #555;
+   }
+
+   .members-table td::before {
+     content: attr(data-label);
+     position: absolute;
+     left: 0.5em;
+     width: 45%;
+     padding-right: 0.5em;
+     text-align: left;
+     font-weight: bold;
+     white-space: nowrap;
+     color: #333;
+   }
+
+   .dark-mode .members-table td::before {
+     color: #ccc;
+   }
+
+   .members-table td:last-child {
+     border-bottom: 0;
+   }
+
+   .members-table td a {
+     word-break: break-all;
+   }
+
+   .dark-mode .members-table td a {
+     color: #6bb0ff;
+   }
+ }
+
+ main.directory-container,
+ .directory-container {
+   max-width: 100%;
+   overflow-x: hidden;
+   box-sizing: border-box;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ main {
+   max-width: 100%;
+   overflow-x: hidden;
+   box-sizing: border-box;
+ }
