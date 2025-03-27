@@ -1131,6 +1131,11 @@
      background-color: #CE1126;
      color: var(--dark-text);
    }
+
+   .dark-mode #nav-menu {
+     background-color: var(--dark-container);
+     color: var(--dark-text);
+   }
  }
 
  @media screen and (max-width: 768px) {
