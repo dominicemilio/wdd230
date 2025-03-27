@@ -6,28 +6,19 @@ if (gridBtn && listBtn && memberList) {
   gridBtn.addEventListener('click', () => {
     memberList.classList.remove('list-view');
     memberList.classList.add('grid-view');
-    if (membersData.length > 0) {
-      renderMembersGrid();
-    }
+    renderMembersGrid();
   });
 
   listBtn.addEventListener('click', () => {
     memberList.classList.remove('grid-view');
     memberList.classList.add('list-view');
-    if (membersData.length > 0) {
-      renderMembersList();
-    }
+    renderMembersList();
   });
 
   let membersData = [];
 
   fetch('data/members.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
       membersData = data.members;
       renderMembersGrid();
@@ -40,30 +31,14 @@ if (gridBtn && listBtn && memberList) {
     membersData.forEach(member => {
       const card = document.createElement('div');
       card.classList.add('member-card');
-      const name = document.createElement('h3');
-      name.textContent = member.name;
-      const address = document.createElement('p');
-      address.textContent = member.address;
-      const phone = document.createElement('p');
-      phone.textContent = member.phone;
-      const websiteLink = document.createElement('a');
-      websiteLink.href = member.website;
-      websiteLink.textContent = 'Website';
-      websiteLink.target = '_blank';
-      const membership = document.createElement('p');
-      membership.textContent = `Membership: ${member.membershipLevel}`;
-      const image = document.createElement('img');
-      image.src = member.image;
-      image.alt = `${member.name} logo`;
-      image.classList.add('bordered-image');
-      image.loading = 'lazy';
-
-      card.appendChild(image);
-      card.appendChild(name);
-      card.appendChild(address);
-      card.appendChild(phone);
-      card.appendChild(websiteLink);
-      card.appendChild(membership);
+      card.innerHTML = `
+        <img src="${member.image}" alt="${member.name} logo" class="bordered-image">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Website</a>
+        <p>Membership: ${member.membershipLevel}</p>
+      `;
 
       memberList.appendChild(card);
     });
@@ -76,16 +51,15 @@ if (gridBtn && listBtn && memberList) {
     table.classList.add('members-table');
 
     const thead = document.createElement('thead');
-    const headers = ["Business Name", "Address", "Phone Number", "Website", "Membership Level"];
     thead.innerHTML = `
-          <tr>
-            <th>${headers[0]}</th>
-            <th>${headers[1]}</th>
-            <th>${headers[2]}</th>
-            <th>${headers[3]}</th>
-            <th>${headers[4]}</th>
-          </tr>
-        `;
+      <tr>
+        <th>Business Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>Website</th>
+        <th>Membership Level</th>
+      </tr>
+    `;
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
@@ -93,21 +67,19 @@ if (gridBtn && listBtn && memberList) {
     membersData.forEach(member => {
       const row = document.createElement('tr');
       row.innerHTML = `
-              <td data-label="${headers[0]}">${member.name}</td>
-              <td data-label="${headers[1]}">${member.address}</td>
-              <td data-label="${headers[2]}">${member.phone}</td>
-              <td data-label="${headers[3]}"><a href="${member.website}" target="_blank">Website</a></td>
-              <td data-label="${headers[4]}">${member.membershipLevel}</td>
-            `;
+        <td>${member.name}</td>
+        <td>${member.address}</td>
+        <td>${member.phone}</td>
+        <td><a href="${member.website}" target="_blank">Website</a></td>
+        <td>${member.membershipLevel}</td>
+      `;
+
       tbody.appendChild(row);
     });
 
     table.appendChild(tbody);
     memberList.appendChild(table);
   }
-
-} else {
-  console.error("Directory view buttons or container not found.");
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -117,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/members.json')
       .then(response => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok for spotlights: ${response.status}`);
+          throw new Error('Network response was not ok');
         }
         return response.json();
       })
@@ -150,11 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           card.innerHTML = `
-                      <img src="${member.image}" alt="${member.name} logo" class="spotlight-image" loading="lazy">
-                      <h3>${member.name}</h3>
-                      <p>${description}</p>
-                      <div class="membership-badge ${member.membershipLevel.toLowerCase()}">${member.membershipLevel} Member</div>
-                    `;
+            <img src="${member.image}" alt="${member.name} logo" class="spotlight-image">
+            <h3>${member.name}</h3>
+            <p>${description}</p>
+            <div class="membership-badge ${member.membershipLevel.toLowerCase()}">${member.membershipLevel} Member</div>
+          `;
 
           spotlightsContainer.appendChild(card);
         });
@@ -163,4 +135,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error loading spotlight members:', error);
       });
   }
-}); // End of DOMContentLoaded listener
+});
